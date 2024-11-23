@@ -1,0 +1,6 @@
+{
+    "require": {
+        "ccxt/ccxt": "^1.57",
+        "jaggedsoft/php-binance-api": "^0.5.28"
+    }
+}

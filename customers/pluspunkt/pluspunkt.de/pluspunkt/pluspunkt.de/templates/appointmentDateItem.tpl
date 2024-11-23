@@ -1,0 +1,1 @@
+<li>[ startDate ] - [ endDate ]</li>

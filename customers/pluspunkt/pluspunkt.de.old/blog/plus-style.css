@@ -1,0 +1,53 @@
+A:active    { COLOR : #B3C4CE; TEXT-DECORATION:none; font-weight: normal;}
+A:link      { COLOR : #B3C4CE; TEXT-DECORATION:none; font-weight: normal;}
+A:visited   { COLOR : #B3C4CE; TEXT-DECORATION:none; font-weight: normal;}
+A:hover     { COLOR : #333333; TEXT-DECORATION:none; font-weight: normal;}
+
+.j4jmenue A:active    { COLOR : #FEFAEF; TEXT-DECORATION:none; font-weight: normal;}
+.j4jmenue A:link      { COLOR : #FEFAEF; TEXT-DECORATION:none; font-weight: normal;}
+.j4jmenue A:visited   { COLOR : #FEFAEF; TEXT-DECORATION:none; font-weight: normal;}
+.j4jmenue A:hover     { COLOR : #BFBFBF; TEXT-DECORATION:none; font-weight: normal;}
+
+BODY        {   scrollbar-face-color: #717F88;
+                scrollbar-shadow-color: #1B1E25;
+                scrollbar-highlight-color: #cccccc;
+                scrollbar-3dlight-color: #272A2F;
+                scrollbar-darkshadow-color: #1B1E25;
+                scrollbar-track-color: #D6D6D6;
+                scrollbar-arrow-color: #000000;
+                scrollbar-base-color : #EEEEEE;
+                font-family: Arial;
+				background-color:#7697B0;
+            }
+.content img {
+	margin:10px;
+}
+input
+{
+ background-color: #889A93;
+ font-family: Arial;
+ font-size: 9pt;
+ color: #333333;
+}
+
+textarea
+{
+ background-color: #889A93;
+ font-family: Arial;
+ font-size: 9pt;
+ color: #333333;
+}
+
+select
+{
+ background-color: #889A93;
+ font-family: Arial;
+ font-size: 9pt;
+ color: #333333;
+}
+
+table {  font-size: 9pt; font-style: normal; font-weight: normal; color: #FFFFFF; text-decoration: none}
+div {  font-size: 9pt; font-style: normal; line-height: normal; font-weight: normal; color: #FFFFFF; text-decoration: none}
+.text10 {font-size:12px;}
+.zitatebold {  font-size: 11pt; font-style: normal; line-height: normal; font-weight: bold; color: #ffae5f; text-decoration: none}
+.zitate {  font-size: 10pt; font-style: normal; line-height: normal; font-weight: normal; color: #ffae5f; text-decoration: none}

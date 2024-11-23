@@ -1,0 +1,4 @@
+AuthType Basic 
+AuthName "Adressen"
+AuthUserFile /raid/pub/p/pl/pluspunktde/passwd
+require user moritz

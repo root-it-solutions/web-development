@@ -1,0 +1,150 @@
+body {
+    background: #fafafa;
+    font-family: Roboto, -apple-system, Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    #color:#fff;
+}
+
+h2 {
+    margin: 0 10px 10px 10px;
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 70px;
+    letter-spacing: 0.0125em;
+    color: #ff00b4;
+    text-align: right;
+}
+
+h2.time {
+    font-size: 43px;
+}
+
+h2.tm {
+    font-size: 43px;
+}
+
+h6 {
+    margin: 0 10px 10px 10px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.0125em;
+}
+
+.card {
+    padding: 10px 40px;
+    background: #000;
+    min-width: 320px;
+    min-height: 300px;
+    max-width: 320px;
+    max-height: 300px;
+    border-radius: 0px;
+    margin: 10px;
+    color: #fff;
+    float: left;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #294;
+}
+
+.shadow1 {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.shadow2 {
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.alignright {
+    text-align: right;
+}
+
+.alignleft {
+    text-align: left;
+}
+
+.yellowBG {
+    background-color: yellow;
+}
+
+.zebra tr:nth-child(even) {
+    background-color: #a6a6a6;
+}
+
+.smallText {
+    font-size: 12px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+td {
+    padding: 3px;
+}
+
+table.blocksPerDay {
+    border: 0;
+    margin-top: 60px;
+    color: #fff;
+}
+
+table.blocksPerDay th {
+    padding: 5px;
+}
+
+table.blocksPerDay td {
+    padding: 5px;
+    text-align: right;
+    min-width: 70px;
+    font-weight: 200;
+}
+
+table.rewardReduction {
+    font-weight: 250;
+    margin-left:20px;
+}
+table.rewardReduction tr td:first-child {
+    padding-right: 25px;
+}
+table.rewardReduction td + td {
+    color: #ff00b4;
+}

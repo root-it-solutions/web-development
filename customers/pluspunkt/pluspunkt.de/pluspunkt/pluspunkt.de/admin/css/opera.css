@@ -1,0 +1,2 @@
+input[type="submit"] { padding:3px 6px 3px 15px; }
+label.error { position:absolute; line-height:14px; margin:2px 0 0 4px; width:auto;  }

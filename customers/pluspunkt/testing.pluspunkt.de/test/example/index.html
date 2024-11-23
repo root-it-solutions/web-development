@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+        <title>jQuery Ellipsis Demo</title>
+
+        <style type="text/css">
+            .clear { clear: both; }
+            .columns .column {
+                float: left;
+                margin: 0 20px 0 0;
+                width: 350px;
+            }
+            
+            /* Setup content panels */
+            .content {
+                margin: 0 0 10px;
+                border: 1px dashed #888;
+                padding: 10px;
+                line-height: 20px;
+                width: 300px;
+            }
+            
+            .content p {
+                overflow: hidden;   /* Overflow hidden is required for plugin. */
+                margin: 0;
+                padding: 0;
+                width: 300px;       /* Width is optional if container defines the width */
+            }
+            .content p.multiline {
+                height: 60px;       /* Height is required for multiple lines to set line limit. */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="columns">
+        
+            <div class="column">
+                <h1>Without ellipsis</h1>
+                <div class="content">
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at tincidunt mauris. Cras ac nibh id ante pharetra egestas. Maecenas pharetra augue ut erat tempor at rhoncus mi tincidunt. Nulla at erat sem. Nam id sem enim, at tincidunt mauris. Nunc ut magna arcu, ac blandit mauris. Nunc in sapien enim. Quisque dui orci, hendrerit id hendrerit eget, tristique ut urna. Donec adipiscing lectus ut velit ullamcorper vehicula. Suspendisse potenti.</p>
+                </div>
+                <div class="content">
+                    <p class="multiline">Aenean eget risus sed urna eleifend fermentum. Mauris iaculis lobortis rhoncus. Aliquam pellentesque, lorem ut commodo consequat, quam dolor varius sem, quis fermentum elit est sit amet neque. Sed mattis mollis sapien, vulputate interdum dui commodo nec. Pellentesque mattis imperdiet massa, ut volutpat diam sodales mattis. Nunc tincidunt facilisis odio adipiscing tempus. Praesent commodo, dui quis molestie euismod, felis orci rutrum erat, a interdum mauris elit vel risus. Praesent scelerisque nulla a eros bibendum varius. Pellentesque faucibus, nisl a lacinia ultricies, arcu odio facilisis nibh, nec pulvinar sapien urna id dolor. Pellentesque consectetur imperdiet ligula vel dignissim. Proin lacinia ante sit amet quam pulvinar adipiscing. Nulla ligula nibh, vestibulum ac sollicitudin id, sollicitudin ac velit. Integer odio libero, interdum ut semper adipiscing, tempus in eros.</p>
+                </div>
+                <div class="content">
+                    <p class="multiline">Nulla sapien urna, pharetra nec hendrerit quis, elementum id purus. Cras vitae lectus lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed nibh eu mi accumsan ultricies. Sed cursus faucibus dignissim. Nam venenatis velit eget ipsum faucibus viverra. Nulla non felis in orci luctus molestie id nec mi. Ut ligula nisi, feugiat id convallis nec, vestibulum in magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla porttitor purus sed arcu vulputate venenatis. Nam quis metus leo, eget cursus ipsum. Praesent semper, libero sit amet viverra auctor, enim nisi vehicula nisl, sit amet fermentum leo urna in mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel scelerisque justo. Nullam magna leo, pretium eget luctus eget, aliquam in massa. Mauris quis mi vel est ultrices aliquet.</p>
+                </div>
+            </div>
+            
+            <div class="column">
+                <h1>With ellipsis</h1>
+                <div class="content">
+                    <p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at tincidunt mauris. Cras ac nibh id ante pharetra egestas. Maecenas pharetra augue ut erat tempor at rhoncus mi tincidunt. Nulla at erat sem. Nam id sem enim, at tincidunt mauris. Nunc ut magna arcu, ac blandit mauris. Nunc in sapien enim. Quisque dui orci, hendrerit id hendrerit eget, tristique ut urna. Donec adipiscing lectus ut velit ullamcorper vehicula. Suspendisse potenti.</p>
+                </div>
+                <div class="content">
+                    <p class="ellipsis multiline">Aenean eget risus sed urna eleifend fermentum. Mauris iaculis lobortis rhoncus. Aliquam pellentesque, lorem ut commodo consequat, quam dolor varius sem, quis fermentum elit est sit amet neque. Sed mattis mollis sapien, vulputate interdum dui commodo nec. Pellentesque mattis imperdiet massa, ut volutpat diam sodales mattis. Nunc tincidunt facilisis odio adipiscing tempus. Praesent commodo, dui quis molestie euismod, felis orci rutrum erat, a interdum mauris elit vel risus. Praesent scelerisque nulla a eros bibendum varius. Pellentesque faucibus, nisl a lacinia ultricies, arcu odio facilisis nibh, nec pulvinar sapien urna id dolor. Pellentesque consectetur imperdiet ligula vel dignissim. Proin lacinia ante sit amet quam pulvinar adipiscing. Nulla ligula nibh, vestibulum ac sollicitudin id, sollicitudin ac velit. Integer odio libero, interdum ut semper adipiscing, tempus in eros.</p>
+                </div>
+                <div class="content">
+                    <p class="ellipsis multiline">Nulla sapien urna, pharetra nec hendrerit quis, elementum id purus. Cras vitae lectus lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed nibh eu mi accumsan ultricies. Sed cursus faucibus dignissim. Nam venenatis velit eget ipsum faucibus viverra. Nulla non felis in orci luctus molestie id nec mi. Ut ligula nisi, feugiat id convallis nec, vestibulum in magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla porttitor purus sed arcu vulputate venenatis. Nam quis metus leo, eget cursus ipsum. Praesent semper, libero sit amet viverra auctor, enim nisi vehicula nisl, sit amet fermentum leo urna in mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel scelerisque justo. Nullam magna leo, pretium eget luctus eget, aliquam in massa. Mauris quis mi vel est ultrices aliquet.</p>
+                </div>
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../src/jquery-ellipsis.js"></script>
+        <script type="text/javascript">
+            // Activate the ellipsis plugin.
+            $(function () {
+                $('.ellipsis').ellipsis();
+            });
+        </script>
+    </body>
+</html>

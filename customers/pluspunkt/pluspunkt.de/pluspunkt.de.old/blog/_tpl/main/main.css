@@ -1,0 +1,12 @@
+fieldset {
+	border:0em;
+}
+label.left {
+	float:left;
+	text-align:left;
+	width:14em;
+	padding:0.2em;
+}
+form br {
+	clear:both;
+}

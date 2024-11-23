@@ -1,0 +1,1 @@
+<img src="_images/nav_static_main-replace.gif" width="800" height="125">

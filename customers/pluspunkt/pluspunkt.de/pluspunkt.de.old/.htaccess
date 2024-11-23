@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^pluspunkt.de [NC]
+RewriteRule ^(.*)$ http://www.pluspunkt.de/$1 [L,R=301]
+

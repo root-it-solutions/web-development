@@ -1,0 +1,47 @@
+.appointmentList h4 { margin:0 0 20px 0; padding:0; font-size:12px; color:#336699; }
+.appointmentList ul { list-style:none; }
+.appointment h4 { margin:0; padding:0; }
+.appointment h4 a { font-size:12px; color:#336699; }
+
+.sitemap { padding:15px 10px 5px 10px; font-size:14px; }
+.sitemap ul { list-style:square; list-style-color:#336699; }
+
+.formular { padding:15px; margin:0 40px 20px 0px; float:left; }
+.formular form { width:auto; }
+.formular table { height:100%; width:100%; }
+.formular table tr { height:30px; }
+.formular td.first { width:130px; }
+.formular input { padding:3px; font-size:12px; margin:0 4px 0 0; vertical-align:middle; width:198px; border:1px solid #7b7a7a; background:#fff;}
+.formular input[type="checkbox"] { width:20px; height:15px; }
+.formular input[type="radio"] { width:20px; height:15px; }
+.formular textarea { padding:3px; font-size: 12px; margin:0 4px 10px 0; vertical-align:middle; width:198px; height:150px; border:1px solid #7b7a7a; background:#fff; }
+.formular input[type="submit"] { width:110px; }
+
+.formularAddress { margin:0; padding:15px 0; float:left; }
+
+
+.reference { padding:0; margin:0; }
+.reference a { text-decoration:none; color:#3c3c3c; }
+.reference ul { padding:0; margin:0; list-style-type:none; }
+.reference li { float:left; margin:0 20px 20px 0; }
+.reference li.imgText { width:580px; }
+
+.impressum { padding:15px; }
+.impressum h6 { margin:20px 5px 0px 10px; }
+.impressum table { padding:0; margin:5px 5px 10px 20px; }
+.impressum p { margin-left:20px; }
+.impressum img { margin:5px 0 5px 0; }
+
+.vision { padding:15px; }
+
+.newsletter { margin:0 0 20px 20px; }
+.newsletter ul { list-style:none; margin:0; }
+.newsletter.detail { padding:15px; }
+.newsletter.detail ul { list-style:disc; }
+.newsletter.signinButton { text-align:right; margin:0; padding:15px 10px 10px 0; }
+a.newsletterSigninButton { font-weight:normal; padding:4px 7px 5px 17px; width:auto; margin:0 0 0 5px; font-size:12px; vertical-align:middle; font-weight:bold; cursor:pointer; background:#2288c6 url(/admin/images/forms/bgButton.gif) 0 0px no-repeat; border:1px solid #aaaaaa; color:#fff; }
+.newsletter.signinFormular { display:none; }
+
+.more { color:#336699; cursor:pointer; }
+
+}

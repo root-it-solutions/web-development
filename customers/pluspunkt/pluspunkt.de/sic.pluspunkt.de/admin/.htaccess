@@ -1,0 +1,20 @@
+RewriteEngine on
+
+RewriteBase /admin
+
+## Auszuschliessende Ordner (werden nicht umgeschrieben bei aufruf)	
+RewriteRule ^images - [QSA,L]
+RewriteRule ^css - [QSA,L]
+RewriteRule ^js - [QSA,L]
+
+## Rules	
+
+## News	
+
+## ohne /
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3&four=$4&five=$5&six=$6 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3&four=$4&five=$5 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3&four=$4 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*) index.php?one=$1&two=$2 [QSA,L]
+RewriteRule ^([^/]*) index.php?one=$1 [QSA,L]

@@ -1,0 +1,4 @@
+AuthType Basic 
+AuthName "Mailversand PP"
+AuthUserFile /raid/0/pub/http/p/pl/pluspunkt/passwd
+require valid-user

@@ -1,0 +1,46 @@
+A:active    { COLOR : #00CCCC; TEXT-DECORATION:none; font-weight: normal; font-size: 12px;}
+A:link      { COLOR : #FFFFFF; TEXT-DECORATION:none; font-weight: normal; font-size: 12px;}
+A:visited   { COLOR : #00CCCC; TEXT-DECORATION:none; font-weight: normal; font-size: 12px;}
+A:hover     { COLOR : #00CCCC; TEXT-DECORATION:none; font-weight: normal; font-size: 12px;}
+
+.klein A:active    { COLOR : #60A0C2; TEXT-DECORATION:none; font-weight: normal; font-size: 10px;}
+.klein A:link      { COLOR : #60A0C2; TEXT-DECORATION:none; font-weight: normal; font-size: 10px;}
+.klein A:visited   { COLOR : #60A0C2; TEXT-DECORATION:none; font-weight: normal; font-size: 10px;}
+.klein A:hover     { COLOR : #FFE5B9; TEXT-DECORATION:none; font-weight: normal; font-size: 10px;}
+
+BODY        {   scrollbar-face-color: #00CCCC;
+                scrollbar-shadow-color: #1B1E25;
+                scrollbar-highlight-color: #cccccc;
+                scrollbar-3dlight-color: #272A2F;
+                scrollbar-darkshadow-color: #1B1E25;
+                scrollbar-track-color: #2C374C;
+                scrollbar-arrow-color: #000000;
+                scrollbar-base-color : #EEEEEE;
+                font-family: Arial
+            }
+
+input
+{
+ background-color: #666666;
+ font-family: Stone Sans;
+ font-size: 9pt;
+ color: #cccccc;
+}
+
+textarea
+{
+ background-color: #666666;
+ font-family: Stone Sans;
+ font-size: 9pt;
+ color: #cccccc;
+}
+
+select
+{
+ background-color: #666666;
+ font-family: Stone Sans;
+ font-size: 9pt;
+ color: #cccccc;
+}
+
+td {  font-family:  Stone Sans, sans-serif; font-size: 12px; font-style: normal; font-weight: normal; color: #EEEEEE; text-decoration: none}

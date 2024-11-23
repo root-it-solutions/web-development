@@ -1,0 +1,49 @@
+A:active    { COLOR : #7B7B7B; TEXT-DECORATION:none; font-weight: bold; font-size:11px;}
+A:link      { COLOR : #7B7B7B; TEXT-DECORATION:none; font-weight: bold; font-size:11px;}
+A:visited   { COLOR : #7B7B7B; TEXT-DECORATION:none; font-weight: bold; font-size:11px;}
+A:hover     { COLOR : #FEA700; TEXT-DECORATION:none; font-weight: bold; font-size:11px;}
+
+.menue A:active    { COLOR : #EEEEEE; TEXT-DECORATION:none; font-weight: bold; font-size:12px;}
+.menue A:link      { COLOR : #EEEEEE; TEXT-DECORATION:none; font-weight: bold; font-size:12px;}
+.menue A:visited   { COLOR : #EEEEEE; TEXT-DECORATION:none; font-weight: bold; font-size:12px;}
+.menue A:hover     { COLOR : #7b7b7b; TEXT-DECORATION:none; font-weight: bold; font-size:12px;}
+
+BODY        {   scrollbar-face-color: #FFA600;
+                scrollbar-shadow-color: #1B1E25;
+                scrollbar-highlight-color: #cccccc;
+                scrollbar-3dlight-color: #555555;
+                scrollbar-darkshadow-color: #1B1E25;
+                scrollbar-track-color: #555555;
+                scrollbar-arrow-color: #000000;
+                scrollbar-base-color : #EEEEEE;
+                font-family: Verdana
+            }
+
+input
+{
+ background-color: #CCCCCC;
+ font-family: Verdana;
+ font-size: 8pt;
+ color: #000000;
+}
+
+textarea
+{
+ background-color: #CCCCCC;
+ font-family: Verdana;
+ font-size: 8pt;
+ color: #000000;
+}
+
+select
+{
+ background-color: #CCCCCC;
+ font-family: Verdana;
+ font-size: 8pt;
+ color: #000000;
+}
+
+table {  font-family:  Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: normal; color: #393939; text-decoration: none}
+h1 {  font-family:  Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: bold; color: #393939; text-decoration: none}
+.text11 {  font-family:  Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: normal; color: #393939; text-decoration: none}
+.linklookalike {  font-family:  Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bold; color: #7b7b7b; text-decoration: none}

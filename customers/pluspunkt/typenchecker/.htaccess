@@ -1,0 +1,40 @@
+FileETag None  
+<ifModule mod_headers.c>  
+Header unset ETag  
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"  
+Header set Pragma "no-cache"  
+Header set Expires "Mon, 1 Jan 2030 01:00:00 GMT"
+</ifModule> 
+
+
+RewriteEngine on
+
+##RewriteCond %{SERVER_PORT} 80
+##RewriteRule ^(.*)$ https://azubistunden.arningbau.de/$1 [R,L]
+
+RewriteBase /
+
+## Auszuschliessende Ordner (werden nicht umgeschrieben bei aufruf)	
+RewriteRule ^fancy - [QSA,L]
+RewriteRule ^cronjobs - [QSA,L]		
+RewriteRule ^uploads - [QSA,L]		
+RewriteRule ^inc - [QSA,L]	
+RewriteRule ^php - [QSA,L]
+RewriteRule ^css - [QSA,L]	
+RewriteRule ^js - [QSA,L]	
+RewriteRule ^img - [QSA,L]
+RewriteRule ^pdf - [QSA,L]	
+RewriteRule ^media - [QSA,L]
+RewriteRule robots.txt - [QSA,L]	
+
+## Rules	
+
+## News	
+
+## ohne /
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)  index.php?one=$1&two=$2&three=$3&four=$4&five=$5&six=$6  [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)  index.php?one=$1&two=$2&three=$3&four=$4&five=$5 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3&four=$4 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*) index.php?one=$1&two=$2 [QSA,L]
+RewriteRule ^([^/]*) index.php?one=$1 [QSA,L]

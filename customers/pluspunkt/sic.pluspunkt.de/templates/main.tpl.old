@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>[ siteTitle ] - Pluspunkt Unternehmensentwicklung GmbH</title>
+        <meta name="robots" content="[ robots ]" />
+        <meta name="keywords" content="[ keywords ]" />
+        <meta name="description" content="[ description ]" />
+        <link rel="stylesheet" href="[ cssdir ]/reset.css" />
+        <link rel="stylesheet" href="[ cssdir ]/text.css" />
+        <link rel="stylesheet" href="[ cssdir ]/960_12_col.css" />
+        <link rel="stylesheet" href="[ cssdir ]/main.css" />
+        <link rel="stylesheet" href="[ cssdir ]/jquery.fancybox.css" />
+        <link rel="stylesheet" href="[ cssdir ]/validationEngine.jquery.css" />
+        <script type="text/javascript" src="[ jsdir ]/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="[ jsdir ]/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".various").fancybox({
+                    maxWidth    : 800,
+                    maxHeight   : 600,
+                    fitToView   : false,
+                    width       : '70%',
+                    height      : '70%',
+                    autoSize    : false,
+                    closeClick  : false,
+                    openEffect  : 'elastic',
+                    closeEffect : 'elastic'
+                });
+                [ hoverJS ]
+                $("#message").click(function () {
+                    $("#message").hide(100);
+                });
+            });
+        </script>
+        <style type="text/css">
+            .contentTL { [ contentWidthTL ] [ contentHeightTL ] margin:0 3px 6px 10px; float:left; z-index:2; background:#fff url(/images/motive/[ motive_id ]-tl.jpg) center no-repeat; }
+            .contentTR { [ contentWidthTR ] [ contentHeightTR ] margin:0 10px 6px 3px; float:left; z-index:2; background:#fff url(/images/motive/[ motive_id ]-tr.jpg) center no-repeat; }
+            .contentBL { [ contentWidthBL ] [ contentHeightBL ] margin:0 3px 0 10px; float:left; z-index:1; background:#fff url(/images/motive/[ motive_id ]-bl.jpg) center no-repeat; }
+            .contentBR { [ contentWidthBR ] [ contentHeightBR ] margin:0 10px 0 3px; float:left; z-index:1; background:#fff url(/images/motive/[ motive_id ]-br.jpg) center no-repeat; }
+            [ hoverStyle ]
+        </style>
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-28016580-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </head>
+    <body>
+    <div class="container_12">
+        <div class="grid_12 header">
+            <div class="grid_9 alpha menu underline">
+                <ul>
+                    [ menu ]
+                </ul>
+            </div>
+            <!-- end .grid_9 -->
+            <div class="grid_2 logo">
+                <a href="/" title="Pluspunkt Unternehmensentwicklung GmbH">&nbsp;</a>
+            </div>
+            <!-- end .grid_2 -->
+            <div class="grid_1 omega underline">
+            </div>
+            <!-- end .grid_1 -->
+        </div>
+        <!-- end <div class="grid_12 header"> -->
+      <div class="clear"></div>
+      [ message ]
+      <div class="clear"></div>
+      [ content ]
+      <div class="clear"></div>
+      <div class="grid_12 footer">
+        &copy; [ year ] Pluspunkt Unternehmensentwicklung GmbH
+      </div>
+      <!-- end .grid_12 -->
+    </div>
+    <!-- end .container_12 -->
+    </body>
+</html>

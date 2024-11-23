@@ -1,0 +1,33 @@
+RewriteEngine on
+
+AddEncoding gzip .gz
+AddType "text/javascript" .gz
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME} \.(js)$
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)$ $1.gz [L]
+
+RewriteCond %{HTTP_HOST} ^pluspunkt.de [NC]
+RewriteRule ^(.*)$ http://www.pluspunkt.de/$1 [L,R=301]
+
+RewriteBase /
+
+## Auszuschliessende Ordner (werden nicht umgeschrieben bei aufruf)	
+RewriteRule ^images - [QSA,L]
+RewriteRule ^css - [QSA,L]
+RewriteRule ^js - [QSA,L]
+RewriteRule ^test - [QSA,L]
+RewriteRule ^sitemap.xml - [QSA,L]
+RewriteRule ^google260c7cf426d77abf.html - [QSA,L]
+
+## Rules	
+
+## News	
+
+## ohne /
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3&four=$4&five=$5&six=$6 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3&four=$4&five=$5 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3&four=$4 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*) index.php?one=$1&two=$2&three=$3 [QSA,L]
+RewriteRule ^([^/]*)/([^/]*) index.php?one=$1&two=$2 [QSA,L]
+RewriteRule ^([^/]*) index.php?one=$1 [QSA,L]
