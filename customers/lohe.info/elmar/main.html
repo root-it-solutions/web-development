@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <script>
-    window.onload = function () {
+    <script>
+        window.onload = function () {
 
-      var chart = new CanvasJS.Chart("chartContainer", {
-        exportEnabled: true,
-        animationEnabled: true,
-        title:{
-          text: "Kryptowerte Verteilung"
-        },
-        legend:{
-          cursor: "pointer",
-          itemclick: explodePie
-        },
-        data: [{
-          type: "pie",
-          showInLegend: true,
-          toolTipContent: "{name}: <strong>{y} EUR</strong>",
-          indexLabel: "{name} - {y} EUR",
-          dataPoints: [
-              {[[ dataPointsArray ]]}
-          ]
-        }]
-      });
-      chart.render();
-    }
+            const formatter = new Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"});
+            var chart = new CanvasJS.Chart("chartContainer", {
+                exportEnabled: true,
+                animationEnabled: true,
+                title: {
+                    text: "Kryptowerte Verteilung"
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: explodePie
+                },
+                data: [{
+                    type: "pie",
+                    showInLegend: true,
+                    toolTipContent: "{name}: <strong>formatter.format({y}) EUR</strong>",
+                    indexLabel: "{name} - formatter.format({y}) EUR",
+                    dataPoints: [
+                        {[[dataPointsArray]]}
+                    ]
+                }]
+            });
+            chart.render();
+        }
 
-    function explodePie (e) {
-      if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
-        e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
-      } else {
-        e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
-      }
-      e.chart.render();
+        function explodePie(e) {
+            if (typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+                e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+            } else {
+                e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+            }
+            e.chart.render();
 
-    }
-  </script>
+        }
+    </script>
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>

@@ -79,6 +79,6 @@ $body .= '</body></html>';
 
 $path_to_file = 'main.html';
 $file_contents = file_get_contents($path_to_file);
-$file_contents = str_replace("{[[ dataPointsArray ]]}", $dataPointsArray_str, $file_contents);
+$file_contents = str_replace("{[[dataPointsArray]]}", $dataPointsArray_str, $file_contents);
 echo $file_contents;
 //echo $body;
