@@ -58,7 +58,7 @@ $eurAmountTotal = $eurAmountBTC + $eurAmountETC + $eurAmountETH + $eurAmountADA 
 //exit;
 //$sdk = new Connection(new SolanaRpcClient(SolanaRpcClient::MAINNET_ENDPOINT));
 //$accountInfo = $sdk->getBalance('6PkSHmbvTHSfaXb2DhHijhwkX7VsoFFVBvR3WBCaUJFd');
-//$sdk->getasds
+//$sdk->ge
 //var_dump($accountInfo);
 $dataPointsArray_str = '';
 $tableContent_str = '';
