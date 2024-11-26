@@ -47,21 +47,25 @@ $eurAmountTotal = $eurAmountBTC + $eurAmountETC + $eurAmountETH + $eurAmountADA 
 //$accountInfo = $sdk->getBalance('6PkSHmbvTHSfaXb2DhHijhwkX7VsoFFVBvR3WBCaUJFd');
 //$sdk->getasds
 //var_dump($accountInfo);
-echo '<html><head></head>';
-echo '<body>';
+$dataPointsArray_str = '';
+$body = '<html><head></head>';
+$body .= '<body>';
 
 foreach ($cgMappingCoinSymbol as $coin => $cgCoin)
 {
     $coinUpper = strtoupper($coin);
-    echo $coinUpper . ': ' . ${'amount' . $coinUpper};
-    echo ' - ';
-    echo number_format(${'eurAmount' . $coinUpper}, 2, ',', '.') . ' EUR';
-    echo '<br /><br />';
+    $body .= $coinUpper . ': ' . ${'amount' . $coinUpper};
+    $body .= ' - ';
+    $body .= number_format(${'eurAmount' . $coinUpper}, 2, ',', '.') . ' EUR';
+    $body .= '<br /><br />';
+    $dataPointsArray_str .= '{ y: '.${'eurAmount' . $coinUpper}.', name: "'.$coinUpper.'" },';
 }
-//echo 'ETH: ' . $amountETH . ' ETH';
-//echo '<br />';
-//echo number_format($eurAmountETH, 2, ',', '.') . 'EUR';
-//echo '<br /><br />';
-echo 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
-echo '<br />';
-echo '</body></html>';
+$body .= 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
+$body .= '<br />';
+$body .= '</body></html>';
+
+$path_to_file = 'main.html';
+$file_contents = file_get_contents($path_to_file);
+$file_contents = str_replace("{[[ dataPointsArray ]]}", $dataPointsArray_str, $file_contents);
+echo $file_contents;
+//echo $body;

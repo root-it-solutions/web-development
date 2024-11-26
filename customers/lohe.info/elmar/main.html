@@ -19,16 +19,10 @@
         data: [{
           type: "pie",
           showInLegend: true,
-          toolTipContent: "{name}: <strong>{y}%</strong>",
+          toolTipContent: "{name}: <strong>{y} EUR</strong>",
           indexLabel: "{name} - {y} EUR",
           dataPoints: [
-            { y: 26, name: "BTC", exploded: true },
-            { y: 20, name: "ETH" },
-            { y: 5, name: "ETC" },
-            { y: 3, name: "SOL" },
-            { y: 7, name: "University" },
-            { y: 17, name: "Executive" },
-            { y: 22, name: "Other Local Assistance"}
+              {[[ dataPointsArray ]]}
           ]
         }]
       });
