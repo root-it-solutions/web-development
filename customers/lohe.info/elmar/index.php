@@ -72,7 +72,7 @@ foreach ($cgMappingCoinSymbol as $coin => $cgCoin)
     $body .= '<br /><br />';
     $dataPointsArray_str .= '{ y: '.number_format(${'eurAmount' . $coinUpper},2, '.', '').', name: "'.$coinUpper.'" },';
 }
-$body = 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
+$body .= 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
 //$body .= '<br />';
 //$body .= '</body></html>';
 
