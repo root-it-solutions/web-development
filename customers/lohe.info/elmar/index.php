@@ -68,16 +68,16 @@ foreach ($cgMappingCoinSymbol as $coin => $cgCoin)
 {
     $coinUpper = strtoupper($coin);
     $eurValue = number_format(${'eurAmount' . $coinUpper}, 2, ',', '.');
-    $body .= $coinUpper . ': ' . ${'amount' . $coinUpper};
-    $body .= ' - ';
-    $body .=  $eurValue. ' EUR';
-    $body .= '<br /><br />';
+//    $body .= $coinUpper . ': ' . ${'amount' . $coinUpper};
+//    $body .= ' - ';
+//    $body .=  $eurValue. ' EUR';
+//    $body .= '<br /><br />';
     $dataPointsArray_str .= '{ y: '.number_format(${'eurAmount' . $coinUpper},2, '.', '').', name: "'.$coinUpper.'" },';
     $tableContent_str .= '<tr><td>'.$coinUpper.'</td><td>'.number_format(${'amount' . $coinUpper}, 8).'</td><td>'.$eurValue.' &euro;</td></tr>';
 
 }
 $tableContent_str .= '<tr><td>Total</td><td></td><td>'.number_format($eurAmountTotal, 2, ',', '.').' &euro;</td></tr>';
-$body .= 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
+//$body .= 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
 //$body .= '<br />';
 //$body .= '</body></html>';
 
@@ -85,6 +85,6 @@ $path_to_file = 'main.html';
 $file_contents = file_get_contents($path_to_file);
 $file_contents = str_replace("{[[dataPointsArray]]}", $dataPointsArray_str, $file_contents);
 $file_contents = str_replace("{[[tableContent]}}", $tableContent_str, $file_contents);
-$file_contents = str_replace("{[[body]]}", $body, $file_contents);
+//$file_contents = str_replace("{[[body]]}", $body, $file_contents);
 echo $file_contents;
 //echo $body;
