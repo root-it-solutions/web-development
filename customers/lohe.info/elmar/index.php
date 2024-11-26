@@ -7,15 +7,15 @@ use MultipleChain\SolanaSDK\Connection;
 use MultipleChain\SolanaSDK\SolanaRpcClient;
 
 $cgMappingCoinSymbol = [
-    'etc'  => 'ethereum-classic',
-    'eth'  => 'ethereum',
     'btc'  => 'bitcoin',
+    'eth'  => 'ethereum',
 //    'dfi'  => 'defichain',
+    'etc'  => 'ethereum-classic',
     'sol'  => 'solana',
-    'ltc'  => 'litecoin',
+    'plu'  => 'pluton',
     'ada'  => 'cardano',
     'doge' => 'dogecoin',
-    'plu'  => 'pluton',
+    'ltc'  => 'litecoin',
 ];
 
 $amountBTC = 0.678361 - 0.32703037 + (0.0623551 / 2);
@@ -25,7 +25,7 @@ $amountADA = 769.005;
 $amountDOGE = 972.878;
 $amountLTC = 2.34873;
 $amountSOL = 22.946;
-$amountPLU = 500.267 + 58;
+$amountPLU = 500.267 + 58 + 307;
 
 $cgc = new CoinGeckoClient();
 $cgPrices = $cgc->simple()->getPrice($cgMappingCoinSymbol['plu'] . ',' . $cgMappingCoinSymbol['doge'] . ',' . $cgMappingCoinSymbol['etc'] . ',' . $cgMappingCoinSymbol['eth'] . ',' . $cgMappingCoinSymbol['ltc'] . ',' . $cgMappingCoinSymbol['ada'] . ',' . $cgMappingCoinSymbol['sol'] . ',' . $cgMappingCoinSymbol['btc'], 'usd,eur,btc');
