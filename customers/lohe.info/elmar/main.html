@@ -6,7 +6,6 @@
     <script>
         window.onload = function () {
 
-            const formatter = new Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"});
             var chart = new CanvasJS.Chart("chartContainer", {
                 exportEnabled: true,
                 animationEnabled: true,
@@ -20,8 +19,8 @@
                 data: [{
                     type: "pie",
                     showInLegend: true,
-                    toolTipContent: "{name}: <strong>" + formatter.format(y) + "EUR</strong>",
-                    indexLabel: "{name} - " + formatter.format(y) + " EUR",
+                    toolTipContent: "{name}: <strong>{y} EUR</strong>",
+                    indexLabel: "{name} - {y} EUR",
                     dataPoints: [
                         {[[dataPointsArray]]}
                     ]

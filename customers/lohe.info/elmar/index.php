@@ -71,7 +71,7 @@ foreach ($cgMappingCoinSymbol as $coin => $cgCoin)
     $body .= ' - ';
     $body .= number_format(${'eurAmount' . $coinUpper}, 2, ',', '.') . ' EUR';
     $body .= '<br /><br />';
-    $dataPointsArray_str .= '{ y: '.${'eurAmount' . $coinUpper}.', name: "'.$coinUpper.'" },';
+    $dataPointsArray_str .= '{ y: '.number_format(${'eurAmount' . $coinUpper},2).', name: "'.$coinUpper.'" },';
 }
 $body .= 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
 $body .= '<br />';
