@@ -76,7 +76,7 @@ foreach ($cgMappingCoinSymbol as $coin => $cgCoin)
     $tableContent_str .= '<tr><td>'.$coinUpper.'</td><td>'.number_format(${'amount' . $coinUpper}, 8).'</td><td>'.$eurValue.' &euro;</td></tr>';
 
 }
-$tableContent_str .= '<tr><td>Total</td><td></td><td>'.$eurAmountTotal.' &euro;</td></tr>';
+$tableContent_str .= '<tr><td>Total</td><td></td><td>'.number_format($eurAmountTotal, 2, ',', '.').' &euro;</td></tr>';
 $body .= 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
 //$body .= '<br />';
 //$body .= '</body></html>';
