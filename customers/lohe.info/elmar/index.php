@@ -61,8 +61,7 @@ $eurAmountTotal = $eurAmountBTC + $eurAmountETC + $eurAmountETH + $eurAmountADA 
 //$sdk->getasds
 //var_dump($accountInfo);
 $dataPointsArray_str = '';
-$body = '<html><head></head>';
-$body .= '<body>';
+$body = '<br />';
 
 foreach ($cgMappingCoinSymbol as $coin => $cgCoin)
 {
@@ -73,12 +72,13 @@ foreach ($cgMappingCoinSymbol as $coin => $cgCoin)
     $body .= '<br /><br />';
     $dataPointsArray_str .= '{ y: '.number_format(${'eurAmount' . $coinUpper},2, '.', '').', name: "'.$coinUpper.'" },';
 }
-$body .= 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
-$body .= '<br />';
-$body .= '</body></html>';
+$body = 'Total: ' . number_format($eurAmountTotal, 2, ',', '.') . ' EUR';
+//$body .= '<br />';
+//$body .= '</body></html>';
 
 $path_to_file = 'main.html';
 $file_contents = file_get_contents($path_to_file);
 $file_contents = str_replace("{[[dataPointsArray]]}", $dataPointsArray_str, $file_contents);
+$file_contents = str_replace("{[[body]]}", $body, $file_contents);
 echo $file_contents;
 //echo $body;
