@@ -54,9 +54,9 @@ foreach ($cgMappingCoinSymbol as $coin => $cgCoin)
 {
     $coinUpper = strtoupper($coin);
     echo $coinUpper . ': ' . ${'amount' . $coinUpper};
-    echo '<br />';
-    echo number_format(${'eurAmount' . $coinUpper}, 2, ',', '.') . 'EUR';
-    echo '<br />';
+    echo ' - ';
+    echo number_format(${'eurAmount' . $coinUpper}, 2, ',', '.') . ' EUR';
+    echo '<br /><br />';
 }
 //echo 'ETH: ' . $amountETH . ' ETH';
 //echo '<br />';
