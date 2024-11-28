@@ -35,10 +35,11 @@ $amountBTC = 0.678361 - 0.32703037 + (0.0623551 / 2);
 $amountETC = 15;
 $amountETH = 0.2370112;
 $amountADA = 769.005;
-$amountDOGE = 972.878;
+$amountDOGE = 972.878 + 1896;
 $amountLTC = 2.34873;
 $amountSOL = 22.946;
 $amountPLU = 500.267 + 58 + 307;
+$amountKAS = 3457;
 
 $cgc = new CoinGeckoClient();
 $cgPrices = $cgc->simple()->getPrice($cgMappingCoinSymbol['plu'] . ',' . $cgMappingCoinSymbol['doge'] . ',' . $cgMappingCoinSymbol['etc'] . ',' . $cgMappingCoinSymbol['eth'] . ',' . $cgMappingCoinSymbol['ltc'] . ',' . $cgMappingCoinSymbol['ada'] . ',' . $cgMappingCoinSymbol['sol'] . ',' . $cgMappingCoinSymbol['btc'], 'usd,eur,btc');
