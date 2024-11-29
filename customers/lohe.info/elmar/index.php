@@ -1,6 +1,6 @@
 <?php
 
-// remove header
+// remove header for no caching
 header_remove('ETag');
 header_remove('Pragma');
 header_remove('Cache-Control');
