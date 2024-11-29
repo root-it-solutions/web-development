@@ -19,7 +19,7 @@ use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 use MultipleChain\SolanaSDK\Connection;
 use MultipleChain\SolanaSDK\SolanaRpcClient;
 
-$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin';
+$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin,kaspa';
 
 $marina = 0.09693437;
 
