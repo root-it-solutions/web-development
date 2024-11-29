@@ -110,7 +110,7 @@ foreach ($cryptoAssets as $coin => $info)
     $eurAmountTotal += $eurValue;
 //    $eurValue = number_format(($info['amount'] * $cgPrices[$info['cgName']['eur']]), 2, ',', '.');
     $dataPointsArray_str .= '{ y: ' . number_format($eurValue, 2, '.', '') . ', name: "' . $coinUpper . '" },';
-    $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format(${'amount' . $coinUpper}, 8) . '</td><td>' . number_format($eurValue, 2, ',', '.') . ' &euro;</td></tr>';
+    $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($eurValue, 8) . '</td><td>' . number_format($eurValue, 2, ',', '.') . ' &euro;</td></tr>';
 }
 /*
 $amountBTC = 0.44826493 - $marina + (0.0623551 / 2);
