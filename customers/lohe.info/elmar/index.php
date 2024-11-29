@@ -99,7 +99,7 @@ $eurAmountTotal = 0;
 
 $cgc = new CoinGeckoClient();
 $cgPrices = $cgc->simple()->getPrice($cgCoinSymbols, 'usd,eur,btc');
-
+var_dump($cgPrices);exit;
 $dataPointsArray_str = '';
 $tableContent_str = '';
 
