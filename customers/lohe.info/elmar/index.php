@@ -19,7 +19,7 @@ use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 use MultipleChain\SolanaSDK\Connection;
 use MultipleChain\SolanaSDK\SolanaRpcClient;
 
-$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin,kaspa';
+$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin,kaspa,ark';
 
 $marina = 0.09693437;
 
@@ -94,6 +94,13 @@ $cryptoAssets = [
         'amount'  => 95513,
         'cgName'  => 'siacoin',
     ],
+    'ark' => [
+        'wallets' => [
+            'Aei4J7ceReK8DKq5fj1zZ5z36VprBXysoP',
+        ],
+        'amount'  => 2029,
+        'cgName'  => 'ark',
+    ]
 ];
 $eurAmountTotal = 0;
 
