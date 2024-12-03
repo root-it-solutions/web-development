@@ -19,7 +19,7 @@ use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 use MultipleChain\SolanaSDK\Connection;
 use MultipleChain\SolanaSDK\SolanaRpcClient;
 
-$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin,kaspa,ark,hydra';
+$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin,kaspa,ark,hydra,tron';
 
 $marina = 0.09693437;
 
@@ -108,6 +108,13 @@ $cryptoAssets = [
         'amount'  => 1522,
         'cgName'  => 'hydra',
     ],
+    'trx' => [
+        'wallets' => [
+            '',
+        ],
+        'amount'  => 721,
+        'cgName'  => 'tron',
+    ]
 ];
 $eurAmountTotal = 0;
 
