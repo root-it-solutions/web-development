@@ -28,7 +28,7 @@ $cryptoAssets = [
         'wallets' => [
             'bc1qxp5tkfa3n5lhyc78ej5rz2ph48t87e7zxmwjuh',
         ],
-        'amount'  => (0.44826493 - $marina + (0.0623551 / 2)),
+        'amount'  => (0.35134237 + (0.0623551 / 2)),
         'cgName'  => 'bitcoin',
     ],
     'etc'  => [
