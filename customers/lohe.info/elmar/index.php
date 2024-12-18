@@ -28,7 +28,7 @@ $cryptoAssets = [
         'wallets' => [
             'bc1qxp5tkfa3n5lhyc78ej5rz2ph48t87e7zxmwjuh',
         ],
-        'amount'  => (0.35134237),
+        'amount'  => (0.35134237 + 0.00464142),
         'cgName'  => 'bitcoin',
     ],
     'etc'   => [
@@ -42,7 +42,7 @@ $cryptoAssets = [
         'wallets' => [
             '',
         ],
-        'amount'  => 0.00636671,
+        'amount'  => 0.00636671 + 0.04279008,
         //        'amount'  => 0.2370112,
         'cgName'  => 'ethereum',
     ],
@@ -57,7 +57,7 @@ $cryptoAssets = [
         'wallets' => [
             '',
         ],
-        'amount'  => 22.946 + 0.350455642,
+        'amount'  => 22.946 + 0.350455642 + 1.43750988,
         'cgName'  => 'solana',
     ],
     'ada'   => [
