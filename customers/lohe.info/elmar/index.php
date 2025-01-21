@@ -28,21 +28,21 @@ $cryptoAssets = [
         'wallets' => [
             'bc1qxp5tkfa3n5lhyc78ej5rz2ph48t87e7zxmwjuh',
         ],
-        'amount'  => (0.35134237 + 0.00464142),
+        'amount'  => (0.35134237 + 0.00464358 + 0.00041379),
         'cgName'  => 'bitcoin',
     ],
     'etc'   => [
         'wallets' => [
             '',
         ],
-        'amount'  => 15 + 5 + 27.17877301,
+        'amount'  => 15 + 27.17877301,
         'cgName'  => 'ethereum-classic',
     ],
     'eth'   => [
         'wallets' => [
             '',
         ],
-        'amount'  => 0.00636671 + 0.04279008,
+        'amount'  => 0.00638006 + 0.04289475 + 0.00314482,
         //        'amount'  => 0.2370112,
         'cgName'  => 'ethereum',
     ],
@@ -57,63 +57,63 @@ $cryptoAssets = [
         'wallets' => [
             '',
         ],
-        'amount'  => 22.946 + 0.350455642 + 1.43750988,
+        'amount'  => 23.2706 + 0.19636986 + 1.54079391 + 0.352468693,
         'cgName'  => 'solana',
     ],
     'ada'   => [
         'wallets' => [
             '',
         ],
-        'amount'  => 769.005,
+        'amount'  => 772.092,
         'cgName'  => 'cardano',
     ],
     'doge'  => [
         'wallets' => [
             '',
         ],
-        'amount'  => (972.878 + 1896),
+        'amount'  => (972.878 + 1899.83),
         'cgName'  => 'dogecoin',
     ],
     'plu'   => [
         'wallets' => [
             '',
         ],
-        'amount'  => (500.267 + 58 + 307),
+        'amount'  => (500.267 + 58 + 367.76),
         'cgName'  => 'pluton',
     ],
     'kas'   => [
         'wallets' => [
             '',
         ],
-        'amount'  => 3457,
+        'amount'  => 3457.51 + 107.915,
         'cgName'  => 'kaspa',
     ],
     'sc'    => [
         'wallets' => [
             '',
         ],
-        'amount'  => 96567,
+        'amount'  => 98624.5678,
         'cgName'  => 'siacoin',
     ],
     'ark'   => [
         'wallets' => [
             'Aei4J7ceReK8DKq5fj1zZ5z36VprBXysoP',
         ],
-        'amount'  => 2046,
+        'amount'  => 2074,
         'cgName'  => 'ark',
     ],
     'hydra' => [
         'wallets' => [
             '',
         ],
-        'amount'  => 1522,
+        'amount'  => 1527.73,
         'cgName'  => 'hydra',
     ],
     'trx'   => [
         'wallets' => [
             '',
         ],
-        'amount'  => 721,
+        'amount'  => 722,
         'cgName'  => 'tron',
     ],
 ];
