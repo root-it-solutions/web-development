@@ -168,17 +168,17 @@ $eurAmountTotal = 0;
 
 
 //$cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['cgCoinMapping'])), 'usd,eur,btc');
-foreach ($cgc->coins()->getList() as $coin)
-{
-    if ($coin['symbol'] == 'caps')
-    {
-        var_dump($coin);
-    }
-}
-exit;
-$cgPrices = $cgc->simple()->getPrice('xrp', 'usd,eur,btc');
-var_dump($cgPrices);
-exit;
+//foreach ($cgc->coins()->getList() as $coin)
+//{
+//    if ($coin['symbol'] == 'caps')
+//    {
+//        var_dump($coin);
+//    }
+//}
+//exit;
+//$cgPrices = $cgc->simple()->getPrice('xrp', 'usd,eur,btc');
+//var_dump($cgPrices);
+//exit;
 
 $dataPointsArray_str = '';
 $tableContent_str = '';
