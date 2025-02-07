@@ -166,8 +166,8 @@ $marina = 0.09693437;
 //];
 $eurAmountTotal = 0;
 
-$cgPrices = $assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']);
-//$cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['cgCoinMapping'])), 'usd,eur,btc');
+
+$cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['cgCoinMapping'])), 'usd,eur,btc');
 //foreach ($cgc->coins()->getList() as $coin)
 //{
 //    if ($coin['symbol'] == 'caps')
@@ -183,7 +183,7 @@ $cgPrices = $assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['co
 $dataPointsArray_str = '';
 $tableContent_str = '';
 
-foreach ($cgPrices as $coin => $info)
+foreach ($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']) as $coin => $info)
 {
     $coinUpper = strtoupper($coin);
     if(array_key_exists($info['cgName'], $cgPrices))
