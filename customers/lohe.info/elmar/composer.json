@@ -3,6 +3,18 @@
         "vlucas/phpdotenv": "^5.6",
         "codenix-sv/coingecko-api": "^1.0",
         "multiplechain/solana-sdk": "^0.1.2",
-        "guzzlehttp/guzzle": "^7.9"
+        "guzzlehttp/guzzle": "^7.9",
+        "kucoin/kucoin-php-sdk": "^1.1",
+        "binance/binance-connector-php": "^1.7",
+        "coinbase/coinbase": "^1.1",
+        "goodmagma/bybit-php-api": "^0.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     }
 }
