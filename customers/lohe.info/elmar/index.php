@@ -2,6 +2,14 @@
  * @return void
  */
 
+//if ($_SERVER['REMOTE_ADDR'] === '185.55.75.180')
+//if ($_SERVER['REMOTE_ADDR'] === '109.43.112.76')
+//{
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+//}
+
 require "vendor/autoload.php";
 
 removeHeaderForNoCaching();
