@@ -38,7 +38,7 @@ class ExchangeAssets extends AssetsHelper
 
     private function binance(): void
     {
-        echo 'Exchange: Binance' . PHP_EOL;
+//        echo 'Exchange: Binance' . PHP_EOL;
         // Binance
         $client = new Binance(
             [
@@ -61,7 +61,7 @@ class ExchangeAssets extends AssetsHelper
 
     public function bybit(): void
     {// ByBit without Earnings Wallet - Bybit Does not support this
-        echo 'Exchange: Bybit' . PHP_EOL;
+//        echo 'Exchange: Bybit' . PHP_EOL;
         // Binance
         $client = new ByBitApi(
             $this->exchangeAPIKeys['bybit']['apiKey'],
@@ -88,7 +88,7 @@ class ExchangeAssets extends AssetsHelper
 
     private function kucoin(): void
     {
-        echo 'Exchange: Kucoin' . PHP_EOL;
+//        echo 'Exchange: Kucoin' . PHP_EOL;
         // KuCoin
         $auth = new Auth(
             $this->exchangeAPIKeys['kucoin']['apiKey'],

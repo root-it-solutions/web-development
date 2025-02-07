@@ -5,9 +5,9 @@
 //if ($_SERVER['REMOTE_ADDR'] === '185.55.75.180')
 //if ($_SERVER['REMOTE_ADDR'] === '109.43.112.76')
 //{
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 //}
 
 require "vendor/autoload.php";
@@ -167,7 +167,18 @@ $marina = 0.09693437;
 $eurAmountTotal = 0;
 
 
-$cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['cgCoinMapping'])), 'usd,eur,btc');
+//$cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['cgCoinMapping'])), 'usd,eur,btc');
+foreach ($cgc->coins()->getList() as $coin)
+{
+    if ($coin['symbol'] == 'caps')
+    {
+        var_dump($coin);
+    }
+}
+exit;
+$cgPrices = $cgc->simple()->getPrice('xrp', 'usd,eur,btc');
+var_dump($cgPrices);
+exit;
 
 $dataPointsArray_str = '';
 $tableContent_str = '';
@@ -175,7 +186,14 @@ $tableContent_str = '';
 foreach ($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']) as $coin => $info)
 {
     $coinUpper = strtoupper($coin);
-    $eurValue = $info['amount'] * $cgPrices[$info['cgName']]['eur'];
+    if(array_key_exists($info['cgName'], $cgPrices))
+    {
+        $eurValue = $info['amount'] * $cgPrices[$info['cgName']]['eur'];
+    }
+    else
+    {
+        $eurValue = 0;
+    }
     $eurAmountTotal += $eurValue;
     $dataPointsArray_str .= '{ y: ' . number_format($eurValue, 2, '.', '') . ', name: "' . $coinUpper . '" },';
     $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . number_format($eurValue, 2, ',', '.') . ' &euro;</td></tr>';
