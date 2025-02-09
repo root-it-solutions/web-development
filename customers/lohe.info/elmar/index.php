@@ -59,6 +59,14 @@ $balances = [
         'amount' => 1896.83, //ByBit Earn
         'cgName' => 'dogecoin',
     ],
+    'SOL' => [
+        'amount' => 1.74480786, // Blockchain.com
+        'cgName' => 'solana',
+    ],
+    'ETH' => [
+        'amount' => 0.04616509, // Blockchain.com
+        'cgName' => 'ethereum',
+    ]
 ];
 $assets = new Assets($balances);
 
@@ -170,7 +178,7 @@ $eurAmountTotal = 0;
 $cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['cgCoinMapping'])), 'usd,eur,btc');
 //foreach ($cgc->coins()->getList() as $coin)
 //{
-//    if ($coin['symbol'] == 'caps')
+//    if ($coin['symbol'] == 'amp')
 //    {
 //        var_dump($coin);
 //    }

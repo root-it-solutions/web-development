@@ -71,6 +71,13 @@ return [
                 'apiKey'     => 'organizations/b21880e6-af40-40c3-8989-8fff1a1e046a/apiKeys/b1ba910f-0cf1-4c92-b583-e9d871a4d15b',
                 'secret'     => '-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHp9YaJFf5RKvBFRI1aJyNKPvnADYP3PuFwNGh/A3hCzoAoGCCqGSM49\nAwEHoUQDQgAE87/frFFvLB9dKooqwAO9V3mAwbZ2CNbSMTu5NUK4MmrDHPU0wPui\njv5VLXdsi7MOBEwsb7e7abr7vWdpYXidKw==\n-----END EC PRIVATE KEY-----\n',
                 'passphrase' => '',
+                'keyID'      => 'b1ba910f-0cf1-4c92-b583-e9d871a4d15b',
+            ],
+            'coinbase2'  => [
+                'apiKey'     => 'organizations/b21880e6-af40-40c3-8989-8fff1a1e046a/apiKeys/4ea5d735-5a65-41bf-808f-5a9d41d94375',
+                'secret'     => '-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILEusQiiWllieDlIoyV2kxqhfH4TLpnaTwvgREKoGMyboAoGCCqGSM49\nAwEHoUQDQgAE6z7cTGLPaYK7p9MX5h5+sNMZcQIHrsWcz/gplS8L6DBdU1eANApa\nGGgzRr9OjupKOZOII0YJp5oibIcLkwCF/g==\n-----END EC PRIVATE KEY-----\n',
+                'passphrase' => '',
+                'keyID'      => '4ea5d735-5a65-41bf-808f-5a9d41d94375',
             ],
             'blockchain' => [
                 'apiKey'     => '',
@@ -447,5 +454,12 @@ return [
         'kasta'  => 'kasta',
         'caps'   => 'coin-capsule',
         'sc'     => 'siacoin',
+        'grt'    => 'the-grap',
+        'vara'   => 'vara-network',
+        'chz'    => 'chiliz',
+        'rly'    => 'rally-2',
+        'comp' => 'compound-governance-token',
+        'bond' => 'barnbridge',
+        'amp' => 'amp-token',
     ],
 ];

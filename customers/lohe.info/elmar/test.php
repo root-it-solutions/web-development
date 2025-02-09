@@ -21,4 +21,5 @@ $_ENV['config'] = require __DIR__ . '/config.php';
 
 //https://rpc.shyft.to?api_key=ZSC7GX72JJ93bHQe
 
-$result = (new TRX())->getBalances(['TBpVJihegutgbrpBPrLmeRob7hmkoaRv27'], 'TRX');
+//$result = (new TRX())->getBalances(['TBpVJihegutgbrpBPrLmeRob7hmkoaRv27'], 'TRX');
+$result = new \App\API\Coinbase();

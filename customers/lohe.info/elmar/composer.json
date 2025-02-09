@@ -7,7 +7,8 @@
         "kucoin/kucoin-php-sdk": "^1.1",
         "binance/binance-connector-php": "^1.7",
         "coinbase/coinbase": "^1.1",
-        "goodmagma/bybit-php-api": "^0.7.0"
+        "goodmagma/bybit-php-api": "^0.7.0",
+        "firebase/php-jwt": "^6.11"
     },
     "autoload": {
         "psr-4": {

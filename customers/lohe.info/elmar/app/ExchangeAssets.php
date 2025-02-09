@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\API\Coinbase;
 use ByBit\SDK\ByBitApi;
 use KuCoin\SDK\Exceptions\HttpException;
 use KuCoin\SDK\Exceptions\InvalidApiUriException;
@@ -109,6 +110,20 @@ class ExchangeAssets extends AssetsHelper
         } catch (HttpException|BusinessException|InvalidApiUriException $e)
         {
             var_dump($e->getMessage());
+        }
+    }
+
+    private function coinbase(): void
+    {
+        $coinbase = new Coinbase();
+        foreach ($coinbase->getBalance()->accounts as $account)
+        {
+//            var_dump($account);exit;
+            $balance = $account->available_balance->value + $account->hold->value;
+            if ($balance > 0)
+            {
+                $this->balances = $this->addBalanceToArray($account->currency, $balance, $this->balances);
+            }
         }
     }
 }

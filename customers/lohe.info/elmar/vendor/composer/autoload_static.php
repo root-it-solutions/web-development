@@ -108,6 +108,7 @@ class ComposerStaticInit668b3527d12e014a9f6c72c68c33e2a9
         'F' => 
         array (
             'Fruitcake\\Cors\\' => 15,
+            'Firebase\\JWT\\' => 13,
         ),
         'E' => 
         array (
@@ -343,6 +344,10 @@ class ComposerStaticInit668b3527d12e014a9f6c72c68c33e2a9
         'Fruitcake\\Cors\\' => 
         array (
             0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'Evenement\\' => 
         array (
