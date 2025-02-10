@@ -35,7 +35,7 @@ class BTCBCH extends AssetsHelper
                     {
                         if (array_key_exists($address, $_ENV['config']['assets']['multiplikator']))
                         {
-                            $balance += balanceFormat($coin, $response->balance->confirmed * $_ENV['config']['assets']['multiplikator'][$address]);
+                            $balance += balanceFormat($coin, $response->balance->confirmed) * $_ENV['config']['assets']['multiplikator'][$address];
                         }
                         else
                         {
@@ -58,7 +58,7 @@ class BTCBCH extends AssetsHelper
         }
         else
         {
-            $normalResponse = json_decode($this->httpClient->request('GET', '/' . $coin . '/address/balances?addresses=' . implode(',',$addresses))->getBody()->getContents());
+            $normalResponse = json_decode($this->httpClient->request('GET', '/' . $coin . '/address/balances?addresses=' . implode(',', $addresses))->getBody()->getContents());
         }
         foreach ($normalResponse as $response)
         {
@@ -66,7 +66,7 @@ class BTCBCH extends AssetsHelper
             {
                 if (array_key_exists($response->address, $_ENV['config']['assets']['multiplikator']))
                 {
-                    $balance += balanceFormat($coin, $response->confirmed * $_ENV['config']['assets']['multiplikator'][$response->address]);
+                    $balance += balanceFormat($coin, $response->confirmed) * $_ENV['config']['assets']['multiplikator'][$response->address];
                 }
                 else
                 {
