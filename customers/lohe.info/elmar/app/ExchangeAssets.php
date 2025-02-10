@@ -116,17 +116,8 @@ class ExchangeAssets extends AssetsHelper
     private function coinbase(): void
     {
         $coinbase = new Coinbase();
-//        var_dump($coinbase->getBalance());exit;
         foreach ($coinbase->getBalance() as $account)
         {
-//            var_dump($account);exit;
-//            if($account->currency == 'SOL')
-//            {
-//                var_dump($account);exit;
-//            }
-//            echo $account->currency.PHP_EOL;
-//            echo $account->available_balance->value.' - '.$account->hold->value.PHP_EOL;
-//            $balance = $account->available_balance->value + $account->hold->value;
             if ($account->total_balance_crypto > 0)
             {
                 $this->balances = $this->addBalanceToArray($account->asset, $account->total_balance_crypto, $this->balances);

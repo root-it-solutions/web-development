@@ -13,7 +13,8 @@ abstract class AssetsHelper
     public function addBalanceToArray($asset, $balance, array $balances): array
     {
         $asset = strtoupper($asset);
-        if ('USDT' !== $asset || 'EUR' !== $asset)
+
+        if ('USDT' !== $asset && 'EUR' !== $asset)
         {
             if (array_key_exists($asset, $balances))
             {
