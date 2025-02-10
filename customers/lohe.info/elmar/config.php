@@ -58,7 +58,7 @@ return [
         //wallets
         'multiplikator' => [
             '3HVjNLMocGfcmsWZahiyiKauGC4Z2mUHsN' => 0.5,
-            '0xfc67f6689DfE3aa15fd795B88075d51ef67F5123' => 0.5,
+            '0xfc67f6689dfe3aa15fd795b88075d51ef67f5123' => 0.5,
         ],
         'exchanges' => [
             'kucoin'     => [

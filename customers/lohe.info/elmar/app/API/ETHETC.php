@@ -23,6 +23,7 @@ class ETHETC extends AssetsHelper
         $response = json_decode($this->httpClient->request('GET', '/' . $coin . '/mainnet/api/?module=account&action=balancemulti&address=' . implode(',', $addresses))->getBody()->getContents());
         foreach ($response->result as $address)
         {
+//            var_dump($address);
             if('eth' === $coin)
             {
 //                var_dump($address);
@@ -39,7 +40,7 @@ class ETHETC extends AssetsHelper
             {
                 if (array_key_exists($address->account, $_ENV['config']['assets']['multiplikator']))
                 {
-                    $balance += balanceFormat($coin, $address->balance + $_ENV['config']['assets']['multiplikator'][$address->account]);
+                    $balance += balanceFormat($coin, $address->balance) * $_ENV['config']['assets']['multiplikator'][$address->account];
                 }
                 else
                 {

@@ -28,7 +28,6 @@ class BTCBCH extends AssetsHelper
         {
             foreach ($addresses as $address)
             {
-                echo $address . PHP_EOL;
                 if (str_contains($address, 'xpub'))
                 {
                     $response = json_decode($this->httpClient->request('GET', '/' . $coin . '/xpub/' . $address . '?derive=segwit')->getBody()->getContents());
