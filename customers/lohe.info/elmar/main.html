@@ -40,88 +40,88 @@ x<!DOCTYPE html>
             e.chart.render();
 
         }
-        $("example").DataTable({order: [[2, 'asc']]});
+
         // new DataTable('#example', {
         //     order: [[2, 'asc']]
         // });
     </script>
-    <style>
+<!--    <style>-->
 
-        .container th h1 {
-            font-weight: bold;
-            font-size: 1.5em;
-            text-align: left;
-            color: #ffffff;
-        }
+<!--        .container th h1 {-->
+<!--            font-weight: bold;-->
+<!--            font-size: 1.5em;-->
+<!--            text-align: left;-->
+<!--            color: #ffffff;-->
+<!--        }-->
 
-        .container td {
-            font-weight: normal;
-            font-size: 1em;
-            -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-            -moz-box-shadow: 0 2px 2px -2px #0E1119;
-            box-shadow: 0 2px 2px -2px #0E1119;
-            color: #ffffff;
-            text-align: right;
-        }
+<!--        .container td {-->
+<!--            font-weight: normal;-->
+<!--            font-size: 1em;-->
+<!--            -webkit-box-shadow: 0 2px 2px -2px #0E1119;-->
+<!--            -moz-box-shadow: 0 2px 2px -2px #0E1119;-->
+<!--            box-shadow: 0 2px 2px -2px #0E1119;-->
+<!--            color: #ffffff;-->
+<!--            text-align: right;-->
+<!--        }-->
 
-        .container {
-            text-align: left;
-            overflow: hidden;
-            width: 50%;
-            margin: 0 auto;
-            display: table;
-            padding: 0 0 8em 0;
-        }
+<!--        .container {-->
+<!--            text-align: left;-->
+<!--            overflow: hidden;-->
+<!--            width: 50%;-->
+<!--            margin: 0 auto;-->
+<!--            display: table;-->
+<!--            padding: 0 0 8em 0;-->
+<!--        }-->
 
-        .container td, .container th {
-            padding: 0.5% 0.7% 0.5% 0.7%;
-        }
+<!--        .container td, .container th {-->
+<!--            padding: 0.5% 0.7% 0.5% 0.7%;-->
+<!--        }-->
 
-        /* Background-color of the odd rows */
-        .container tr:nth-child(odd) {
-            background-color: #6477a0;
-        }
+<!--        /* Background-color of the odd rows */-->
+<!--        .container tr:nth-child(odd) {-->
+<!--            background-color: #6477a0;-->
+<!--        }-->
 
-        /* Background-color of the even rows */
-        .container tr:nth-child(even) {
-            background-color: #55607a;
-        }
+<!--        /* Background-color of the even rows */-->
+<!--        .container tr:nth-child(even) {-->
+<!--            background-color: #55607a;-->
+<!--        }-->
 
-        .container th {
-            background-color: #6f8cc7;
-        }
+<!--        .container th {-->
+<!--            background-color: #6f8cc7;-->
+<!--        }-->
 
-        .container td:first-child {
-            color: #f68695;
-            text-align: left;
-            font-weight: bold;
-        }
+<!--        .container td:first-child {-->
+<!--            color: #f68695;-->
+<!--            text-align: left;-->
+<!--            font-weight: bold;-->
+<!--        }-->
 
-        .container tr:hover {
-            background-color: #464A52;
-            -webkit-box-shadow: 0 6px 6px -6px #0E1119;
-            -moz-box-shadow: 0 6px 6px -6px #0E1119;
-            box-shadow: 0 6px 6px -6px #0E1119;
-        }
+<!--        .container tr:hover {-->
+<!--            background-color: #464A52;-->
+<!--            -webkit-box-shadow: 0 6px 6px -6px #0E1119;-->
+<!--            -moz-box-shadow: 0 6px 6px -6px #0E1119;-->
+<!--            box-shadow: 0 6px 6px -6px #0E1119;-->
+<!--        }-->
 
-        .container td:hover {
-            background-color: #FFF842;
-            color: #403E10;
-            font-weight: bold;
+<!--        .container td:hover {-->
+<!--            background-color: #FFF842;-->
+<!--            color: #403E10;-->
+<!--            font-weight: bold;-->
 
-            box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
-            transform: translate3d(6px, -6px, 0);
+<!--            box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;-->
+<!--            transform: translate3d(6px, -6px, 0);-->
 
-            transition-delay: 0s;
-            transition-duration: 0.4s;
-            transition-property: all;
-            transition-timing-function: line;
-        }
-        tr.total td {
-            font-weight: bold;
-            font-size: 1.5em;
-        }
-    </style>
+<!--            transition-delay: 0s;-->
+<!--            transition-duration: 0.4s;-->
+<!--            transition-property: all;-->
+<!--            transition-timing-function: line;-->
+<!--        }-->
+<!--        tr.total td {-->
+<!--            font-weight: bold;-->
+<!--            font-size: 1.5em;-->
+<!--        }-->
+<!--    </style>-->
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
 
 </head>
@@ -146,5 +146,8 @@ x<!DOCTYPE html>
     </tbody>
 </table>
 {[[body]]}
+<script>
+    $("example").DataTable({order: [[2, 'asc']]});
+</script>
 </body>
 </html>
