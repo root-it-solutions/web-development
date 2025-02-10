@@ -187,6 +187,7 @@ $cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['
 $eurAmountTotal = 0;
 $dataPointsArray_str = '';
 $tableContent_str = '';
+$tableContentNA_str = '';
 
 foreach ($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']) as $coin => $info)
 {
@@ -196,12 +197,13 @@ foreach ($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['confi
         $eurValue = $info['amount'] * $cgPrices[$info['cgName']]['eur'];
         $eurAmountTotal += $eurValue;
         $dataPointsArray_str .= '{ y: ' . number_format($eurValue, 2, '.', '') . ', name: "' . $coinUpper . '" },';
+        $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . $eurValue. '</td></tr>';
     }
     else
     {
         $eurValue = 'N/A';
+        $tableContentNA_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . $eurValue. '</td></tr>';
     }
-    $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . $eurValue. '</td></tr>';
 //    $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . number_format($eurValue, 2, '.', ',') . '</td></tr>';
 }
 
@@ -212,5 +214,6 @@ $path_to_file = 'main.html';
 $file_contents = file_get_contents($path_to_file);
 $file_contents = str_replace("{[[dataPointsArray]]}", $dataPointsArray_str, $file_contents);
 $file_contents = str_replace("{[[tableContent]}}", $tableContent_str, $file_contents);
+$file_contents = str_replace("{[[tableContentNA]}}", $tableContent_str, $file_contents);
 $file_contents = str_replace("{[[body]]}", $body, $file_contents);
 echo $file_contents;

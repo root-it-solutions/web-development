@@ -14,7 +14,7 @@ abstract class AssetsHelper
     {
         $asset = strtoupper($asset);
 
-        if ('USDT' !== $asset && 'EUR' !== $asset)
+        if ('USDT' !== $asset && 'EUR' !== $asset && 'USDC' !== $asset)
         {
             if (array_key_exists($asset, $balances))
             {
