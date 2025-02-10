@@ -191,7 +191,9 @@ $cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['
 $dataPointsArray_str = '';
 $tableContent_str = '';
 
-foreach ($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']) as $coin => $info)
+$assets_array = $assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']);
+ksort($assets_array);
+foreach ($assets_array as $coin => $info)
 {
     $coinUpper = strtoupper($coin);
     if(array_key_exists($info['cgName'], $cgPrices))
