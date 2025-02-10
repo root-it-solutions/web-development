@@ -9,30 +9,59 @@ use GuzzleHttp\Client;
 class Coinbase
 {
     protected const BASE_URI = 'https://api.coinbase.com';
+//    protected const BASE_URI = 'https://api.cdp.coinbase.com';
     private Client $httpClient;
 
     public function __construct(?Client $client = NULL)
     {
         $this->httpClient = $client ?: new Client([
             'base_uri' => self::BASE_URI,
-            'headers'  => [
-                'Authorization' => 'Bearer ' . $this->buildJwt(),
-            ],
         ]);
     }
 
     public function getBalance()
     {
-        return json_decode($this->httpClient->request('GET', '/api/v3/brokerage/accounts')->getBody()->getContents());
+//        $this->httpClient->setDefaultOption(
+//            'headers' => [
+//            'Authorization' => 'Bearer ' . $this->buildJwt('/api/v3/brokerage/portfolios'),
+//        ]);
+        $portfolios = json_decode(
+            $this->httpClient->request('GET', '/api/v3/brokerage/portfolios',
+                [ 'headers' => [ 'Authorization' => 'Bearer ' . $this->buildJwt('/api/v3/brokerage/portfolios') ] ]
+            )->getBody()->getContents(),
+        );
+
+//        var_dump($portfolios);
+//        exit;
+
+        $positions = [];
+        foreach ($portfolios->portfolios as $portfolio)
+        {
+//            var_dump($portfolio);exit;
+            $accounts = json_decode(
+                $this->httpClient->request('GET', '/api/v3/brokerage/portfolios/'.$portfolio->uuid,
+                    [ 'headers' => [ 'Authorization' => 'Bearer ' . $this->buildJwt('/api/v3/brokerage/portfolios/'.$portfolio->uuid) ] ]
+                )->getBody()->getContents(),
+            );
+            $positions = array_merge($positions, $accounts->breakdown->spot_positions);
+//            var_dump($accounts->breakdown->spot_positions);
+        }
+//        exit;
+//        return json_decode($this->httpClient->request('GET', '/api/v3/brokerage/accounts/2a99ae60-ec7d-5b18-9c89-e6c3e1e417ec')->getBody()->getContents());
+//        return json_decode($this->httpClient->request('GET', '/api/v3/brokerage/accounts?limit=250')->getBody()->getContents());
+//        return json_decode($this->httpClient->request('GET', '/api/v3/brokerage/accounts/2d397664-1a8e-5046-8a7f-396900204b6f')->getBody()->getContents());
+        return $positions;
     }
 
-    private function buildJwt()
+    private function buildJwt($request_path)
     {
         $keyName = $_ENV['config']['assets']['exchanges']['coinbase']['apiKey'];
         $keySecret = str_replace('\\n', "\n", $_ENV['config']['assets']['exchanges']['coinbase']['secret']);
         $request_method = 'GET';
         $url = 'api.coinbase.com';
-        $request_path = '/api/v3/brokerage/accounts';
+//        $url = 'api.cdp.coinbase.com';
+//        $request_path = '/api/v3/brokerage/portfolios';
+//        $request_path = '/api/v3/brokerage/portfolios';
 
         $uri = $request_method . ' ' . $url . $request_path;
         $privateKeyResource = openssl_pkey_get_private($keySecret);
