@@ -33,14 +33,14 @@ class BTCBCH extends AssetsHelper
                     $response = json_decode($this->httpClient->request('GET', '/' . $coin . '/xpub/' . $address . '?derive=segwit')->getBody()->getContents());
                     if (0 < $response->balance->confirmed)
                     {
-                        if (array_key_exists($address, $_ENV['config']['assets']['multiplikator']))
-                        {
-                            $balance += balanceFormat($coin, $response->balance->confirmed) * $_ENV['config']['assets']['multiplikator'][$address];
-                        }
-                        else
-                        {
-                            $balance += balanceFormat($coin, $response->balance->confirmed);
-                        }
+//                        if (array_key_exists($address, $_ENV['config']['assets']['multiplikator']))
+//                        {
+                        $balance += balanceFormat($coin, $response->balance->confirmed, $address);// * $_ENV['config']['assets']['multiplikator'][$address];
+//                        }
+//                        else
+//                        {
+//                            $balance += balanceFormat($coin, $response->balance->confirmed);
+//                        }
                     }
 
                 }
@@ -64,14 +64,7 @@ class BTCBCH extends AssetsHelper
         {
             if (0 < $response->confirmed)
             {
-                if (array_key_exists($response->address, $_ENV['config']['assets']['multiplikator']))
-                {
-                    $balance += balanceFormat($coin, $response->confirmed) * $_ENV['config']['assets']['multiplikator'][$response->address];
-                }
-                else
-                {
-                    $balance += balanceFormat($coin, $response->confirmed);
-                }
+                $balance += balanceFormat($coin, $response->confirmed, $response->address); // * $_ENV['config']['assets']['multiplikator'][$response->address];
             }
         }
 

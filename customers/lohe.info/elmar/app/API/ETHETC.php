@@ -24,30 +24,24 @@ class ETHETC extends AssetsHelper
         foreach ($response->result as $address)
         {
 //            var_dump($address);
-            if('eth' === $coin)
+            if ('eth' === $coin)
             {
 //                var_dump($address);
-                $client = new Client(['base_uri' => 'https://eth.blockscout.com']);
+                $client = new Client([ 'base_uri' => 'https://eth.blockscout.com' ]);
                 foreach (json_decode($client->request('GET', '/api/v2/addresses/' . $address->account . '/token-balances')->getBody()->getContents()) as $token)
                 {
-                    if(strlen($token->token->symbol) <= 3)
+                    if (strlen($token->token->symbol) <= 3)
                     {
                         $balances = $this->addBalanceToArray($token->token->symbol, balanceFormat($token->token->symbol, $token->value), $balances);
                     }
                 }
             }
-            if(0 < $address->balance)
+            if (0 < $address->balance)
             {
-                if (array_key_exists($address->account, $_ENV['config']['assets']['multiplikator']))
-                {
-                    $balance += balanceFormat($coin, $address->balance) * $_ENV['config']['assets']['multiplikator'][$address->account];
-                }
-                else
-                {
-                    $balance += balanceFormat($coin, $address->balance);
-                }
+                $balance += balanceFormat($coin, $address->balance, $address->account);
             }
         }
+
 //        var_dump($balances);exit;
 
         return $balance;

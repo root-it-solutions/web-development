@@ -22,7 +22,7 @@ function IsNullOrEmptyString(string|null $str): bool
     return $str === NULL || trim($str) === '';
 }
 
-function balanceFormat($coin, $balance)
+function balanceFormat($coin, $balance, $address = '')
 {
     $coin = strtoupper($coin);
 
@@ -30,35 +30,38 @@ function balanceFormat($coin, $balance)
     {
         $balance = str_pad($balance, 9, '0', STR_PAD_LEFT);
 
-        return substr_replace($balance, '.', (strlen($balance) - 8), 0);
+        $balance =  substr_replace($balance, '.', (strlen($balance) - 8), 0);
     }
     elseif ($coin === 'ETH' || $coin === 'ETC' || $coin === 'PLU' || $coin === 'RBL' || $coin === 'LPT' || $coin === 'EBK')
     {
         $balance = str_pad($balance, 19, '0', STR_PAD_LEFT);
 
-        return substr_replace($balance, '.', (strlen($balance) - 18), 0);
+        $balance =  substr_replace($balance, '.', (strlen($balance) - 18), 0);
     }
     elseif ($coin === 'ADA' || $coin === 'TRX')
     {
         $balance = str_pad($balance, 7, '0', STR_PAD_LEFT);
 
-        return substr_replace($balance, '.', (strlen($balance) - 6), 0);
+        $balance =  substr_replace($balance, '.', (strlen($balance) - 6), 0);
     }
     elseif ($coin === 'SC')
     {
         $balance = sprintf("%.0f", $balance);
         $balance = mb_substr($balance, 0, strlen($balance) - 12);
 
-        return substr_replace($balance, '.', (strlen($balance) - 12), 0);
+        $balance =  substr_replace($balance, '.', (strlen($balance) - 12), 0);
     }
     elseif ($coin === 'SOL')
     {
         $balance = str_pad($balance, 10, '0', STR_PAD_LEFT);
 
-        return substr_replace($balance, '.', (strlen($balance) - 9), 0);
+        $balance =  substr_replace($balance, '.', (strlen($balance) - 9), 0);
     }
-    else
+
+    if (array_key_exists($address, $_ENV['config']['assets']['multiplikator']))
     {
-        return $balance;
+        $balance = $balance * $_ENV['config']['assets']['multiplikator'][$address];
     }
+
+    return $balance;
 }
