@@ -214,6 +214,6 @@ $path_to_file = 'main.html';
 $file_contents = file_get_contents($path_to_file);
 $file_contents = str_replace("{[[dataPointsArray]]}", $dataPointsArray_str, $file_contents);
 $file_contents = str_replace("{[[tableContent]}}", $tableContent_str, $file_contents);
-$file_contents = str_replace("{[[tableContentNA]}}", $tableContent_str, $file_contents);
+$file_contents = str_replace("{[[tableContentNA]}}", $tableContentNA_str, $file_contents);
 $file_contents = str_replace("{[[body]]}", $body, $file_contents);
 echo $file_contents;
