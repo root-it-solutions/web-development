@@ -4,7 +4,6 @@ x<!DOCTYPE html>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script>
         window.onload = function () {
@@ -41,7 +40,9 @@ x<!DOCTYPE html>
             e.chart.render();
 
         }
-        new DataTable('#example');
+        new DataTable('#example', {
+            order: [[2, 'asc']]
+        });
     </script>
     <style>
 
@@ -120,6 +121,8 @@ x<!DOCTYPE html>
             font-size: 1.5em;
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
+
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
