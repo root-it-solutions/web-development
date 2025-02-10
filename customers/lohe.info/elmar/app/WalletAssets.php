@@ -36,7 +36,7 @@ class WalletAssets extends AssetsHelper
 
     private function getBTCBalance(array $wallets): void
     {
-        $result = (new BTCBCH())->getBalances(implode(',', $wallets), 'BTC');
+        $result = (new BTCBCH())->getBalances($wallets, 'BTC');
         $this->balances = $this->addBalanceToArray('BTC', $result, $this->balances);
     }
 

@@ -47,7 +47,8 @@ $balances = [
     ]
 ];
 $assets = new Assets($balances);
-
+//var_dump($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']));
+//exit;
 //$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin,kaspa,ark,hydra,tron';
 
 //$marina = 0.09693437;

@@ -15,23 +15,33 @@ class BTCBCH extends AssetsHelper
         $this->httpClient = $client ?: new Client([ 'base_uri' => self::BASE_URI ]);
     }
 
-    public function getBalances(string $addresses, $coin = 'btc')
+    public function getBalances(array $addresses, $coin = 'btc')
     {
         $balance = 0;
         $normalAddresses = [];
         $normalResponse = [];
         $coin = strtolower($coin);
 
-        if (str_contains($addresses, 'xpub'))
+//        echo implode(',', $addresses);exit;
+//        var_dump(array_key_exists('3HVjNLMocGfcmsWZahiyiKauGC4Z2mUHsN', $_ENV['config']['assets']['multiplikator']));exit;
+        if (str_contains(implode(',', $addresses), 'xpub'))
         {
-            foreach (explode(',', $addresses) as $address)
+            foreach ($addresses as $address)
             {
+                echo $address . PHP_EOL;
                 if (str_contains($address, 'xpub'))
                 {
                     $response = json_decode($this->httpClient->request('GET', '/' . $coin . '/xpub/' . $address . '?derive=segwit')->getBody()->getContents());
                     if (0 < $response->balance->confirmed)
                     {
-                        $balance += balanceFormat($coin, $response->balance->confirmed);
+                        if (array_key_exists($address, $_ENV['config']['assets']['multiplikator']))
+                        {
+                            $balance += balanceFormat($coin, $response->balance->confirmed * $_ENV['config']['assets']['multiplikator'][$address]);
+                        }
+                        else
+                        {
+                            $balance += balanceFormat($coin, $response->balance->confirmed);
+                        }
                     }
 
                 }
@@ -49,13 +59,20 @@ class BTCBCH extends AssetsHelper
         }
         else
         {
-            $normalResponse = json_decode($this->httpClient->request('GET', '/' . $coin . '/address/balances?addresses=' . $addresses)->getBody()->getContents());
+            $normalResponse = json_decode($this->httpClient->request('GET', '/' . $coin . '/address/balances?addresses=' . implode(',',$addresses))->getBody()->getContents());
         }
         foreach ($normalResponse as $response)
         {
             if (0 < $response->confirmed)
             {
-                $balance += balanceFormat($coin, $response->confirmed);
+                if (array_key_exists($response->address, $_ENV['config']['assets']['multiplikator']))
+                {
+                    $balance += balanceFormat($coin, $response->confirmed * $_ENV['config']['assets']['multiplikator'][$response->address]);
+                }
+                else
+                {
+                    $balance += balanceFormat($coin, $response->confirmed);
+                }
             }
         }
 

@@ -56,6 +56,10 @@ return [
 
     'assets'          => [
         //wallets
+        'multiplikator' => [
+            '3HVjNLMocGfcmsWZahiyiKauGC4Z2mUHsN' => 0.5,
+            '0xfc67f6689DfE3aa15fd795B88075d51ef67F5123' => 0.5,
+        ],
         'exchanges' => [
             'kucoin'     => [
                 'apiKey'     => '6790e188ee2685000154abcf',
@@ -102,7 +106,7 @@ return [
         ],
         'wallets'   => [
             'btc'   => [
-                'xpub6CSURMs5EsTmUrgNBtGzxsJSBPrRjLXBKSrbKTjYetD8zcNy9KkugB2SZMz5zczjjCfLgWw6potbqkbaR8xSoD4a77YrvzGPCH9J5W13NzF', // All Elmar
+                'xpub6CSURMs5EsTmUrgNBtGzxsJSBPrRjLXBKSrbKTjYetD8zcNy9KkugB2SZMz5zczjjCfLgWw6potbqkbaR8xSoD4a77YrvzGPCH9J5W13NzF', // Ledger All Elmar
                 '3HVjNLMocGfcmsWZahiyiKauGC4Z2mUHsN', //DuE Mining
             ],
             'etc'   => [

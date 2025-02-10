@@ -37,7 +37,14 @@ class ETHETC extends AssetsHelper
             }
             if(0 < $address->balance)
             {
-                $balance += balanceFormat($coin, $address->balance);
+                if (array_key_exists($address->account, $_ENV['config']['assets']['multiplikator']))
+                {
+                    $balance += balanceFormat($coin, $address->balance + $_ENV['config']['assets']['multiplikator'][$address->account]);
+                }
+                else
+                {
+                    $balance += balanceFormat($coin, $address->balance);
+                }
             }
         }
 //        var_dump($balances);exit;
