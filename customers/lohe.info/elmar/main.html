@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script>
         window.onload = function () {
 
@@ -38,6 +40,7 @@
             e.chart.render();
 
         }
+        new DataTable('#example');
     </script>
     <style>
 
@@ -121,7 +124,8 @@
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
 <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 <p>&nbsp;</p>
-<table class="container">
+<table id="example" class="display">
+<!--<table class="container" id="example" class="display">-->
     <thead>
     <tr>
         <th><h1>Krypto</h1></th>
