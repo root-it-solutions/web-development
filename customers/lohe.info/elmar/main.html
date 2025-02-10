@@ -146,6 +146,12 @@
     $("#example").DataTable({
         order: [[2, 'desc']],
         paging: false,
+        columnDefs: [
+            {
+                target: 2,
+                render: DataTable.render.number('.', ',', 2, '€')
+            }
+        ],
     });
 </script>
 </body>

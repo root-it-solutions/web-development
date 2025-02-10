@@ -206,7 +206,8 @@ foreach ($assets_array as $coin => $info)
     }
     $eurAmountTotal += $eurValue;
     $dataPointsArray_str .= '{ y: ' . number_format($eurValue, 2, '.', '') . ', name: "' . $coinUpper . '" },';
-    $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . number_format($eurValue, 2, ',', '.') . '</td></tr>';
+    $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . $eurValue. '</td></tr>';
+//    $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . number_format($eurValue, 2, '.', ',') . '</td></tr>';
 }
 
 $body = '<br />';
