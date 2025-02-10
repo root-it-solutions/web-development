@@ -175,14 +175,14 @@ $cryptoAssets = [
 
 
 $cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['cgCoinMapping'])), 'usd,eur,btc');
-//foreach ($cgc->coins()->getList() as $coin)
-//{
-//    if ($coin['symbol'] == 'amp')
-//    {
-//        var_dump($coin);
-//    }
-//}
-//exit;
+foreach ($cgc->coins()->getList() as $coin)
+{
+    if ($coin['symbol'] == 'ebk')
+    {
+        var_dump($coin);
+    }
+}
+exit;
 
 $eurAmountTotal = 0;
 $dataPointsArray_str = '';

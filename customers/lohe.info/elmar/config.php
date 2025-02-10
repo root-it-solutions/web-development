@@ -116,6 +116,7 @@ return [
                 '0x3937a65ff331D387681a684F311Fd190788ACa2b', // Ledger - Metamask (PLU)
                 '0x6e907D014eD62DB47C6546b96dAa8Dbaf4206ACd', // Ledger PLU
                 '0xC1ECf0F8cae39C273Ee3cb321c88c47700d203C4', // Ledger
+                '0xEd10338dDa62d8470e7fD475C263f348363EC9E7', // Ledger
             ],
             'ada'   => [
                 'addr1qymcremf07wgeqh33qtc7yxamz6seay4kk50zze8xehsmff262wnw2kdh2c5jq48jchk6ywm8yakd2qas4f0f8rqgfvqt44pnl',
@@ -461,5 +462,6 @@ return [
         'comp' => 'compound-governance-token',
         'bond' => 'barnbridge',
         'amp' => 'amp-token',
+        'lpt' => 'livepeer',
     ],
 ];
