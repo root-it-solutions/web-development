@@ -195,12 +195,12 @@ foreach ($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['confi
     {
         $eurValue = $info['amount'] * $cgPrices[$info['cgName']]['eur'];
         $eurAmountTotal += $eurValue;
+        $dataPointsArray_str .= '{ y: ' . number_format($eurValue, 2, '.', '') . ', name: "' . $coinUpper . '" },';
     }
     else
     {
         $eurValue = 'N/A';
     }
-    $dataPointsArray_str .= '{ y: ' . number_format($eurValue, 2, '.', '') . ', name: "' . $coinUpper . '" },';
     $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . $eurValue. '</td></tr>';
 //    $tableContent_str .= '<tr><td>' . $coinUpper . '</td><td>' . number_format($info['amount'], 8) . '</td><td>' . number_format($eurValue, 2, '.', ',') . '</td></tr>';
 }
