@@ -5,46 +5,46 @@ x<!DOCTYPE html>
     <title>Title</title>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
-    <script>
-        window.onload = function () {
+<!--    <script>-->
+<!--        window.onload = function () {-->
 
-            var chart = new CanvasJS.Chart("chartContainer", {
-                exportEnabled: true,
-                animationEnabled: true,
-                title: {
-                    text: "Kryptowerte Verteilung"
-                },
-                legend: {
-                    cursor: "pointer",
-                    itemclick: explodePie
-                },
-                data: [{
-                    type: "pie",
-                    showInLegend: true,
-                    toolTipContent: "{name}: <strong>{y} EUR</strong>",
-                    indexLabel: "{name} - {y} EUR",
-                    dataPoints: [
-                        {[[dataPointsArray]]}
-                    ]
-                }]
-            });
-            chart.render();
-        }
+<!--            var chart = new CanvasJS.Chart("chartContainer", {-->
+<!--                exportEnabled: true,-->
+<!--                animationEnabled: true,-->
+<!--                title: {-->
+<!--                    text: "Kryptowerte Verteilung"-->
+<!--                },-->
+<!--                legend: {-->
+<!--                    cursor: "pointer",-->
+<!--                    itemclick: explodePie-->
+<!--                },-->
+<!--                data: [{-->
+<!--                    type: "pie",-->
+<!--                    showInLegend: true,-->
+<!--                    toolTipContent: "{name}: <strong>{y} EUR</strong>",-->
+<!--                    indexLabel: "{name} - {y} EUR",-->
+<!--                    dataPoints: [-->
+<!--                        {[[dataPointsArray]]}-->
+<!--                    ]-->
+<!--                }]-->
+<!--            });-->
+<!--            chart.render();-->
+<!--        }-->
 
-        function explodePie(e) {
-            if (typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
-                e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
-            } else {
-                e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
-            }
-            e.chart.render();
+<!--        function explodePie(e) {-->
+<!--            if (typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {-->
+<!--                e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;-->
+<!--            } else {-->
+<!--                e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;-->
+<!--            }-->
+<!--            e.chart.render();-->
 
-        }
+<!--        }-->
 
-        // new DataTable('#example', {
-        //     order: [[2, 'asc']]
-        // });
-    </script>
+<!--        // new DataTable('#example', {-->
+<!--        //     order: [[2, 'asc']]-->
+<!--        // });-->
+<!--    </script>-->
 <!--    <style>-->
 
 <!--        .container th h1 {-->
@@ -127,7 +127,7 @@ x<!DOCTYPE html>
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+<!--<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>-->
 <p>&nbsp;</p>
 <table id="example" class="display dataTable" style="width:100%">
 <!--<table class="container" id="example" class="display">-->
