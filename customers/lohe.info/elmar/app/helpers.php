@@ -32,7 +32,7 @@ function balanceFormat($coin, $balance)
 
         return substr_replace($balance, '.', (strlen($balance) - 8), 0);
     }
-    elseif ($coin === 'ETH' || $coin === 'ETC')
+    elseif ($coin === 'ETH' || $coin === 'ETC' || $coin === 'PLU' || $coin === 'RBL')
     {
         $balance = str_pad($balance, 19, '0', STR_PAD_LEFT);
 

@@ -39,19 +39,22 @@ class WalletAssets extends AssetsHelper
         $result = (new BTCBCH())->getBalances(implode(',', $wallets), 'BTC');
         $this->balances = $this->addBalanceToArray('BTC', $result, $this->balances);
     }
+
     private function getARKBalance(array $wallets): void
     {
         $result = (new ARK())->getBalances($wallets, 'ARK');
         $this->balances = $this->addBalanceToArray('ARK', $result, $this->balances);
     }
+
     private function getETHBalance(array $wallets): void
     {
-        $result = (new ETHETC())->getBalances($wallets, 'ETH');
+        $result = (new ETHETC())->getBalances($wallets, 'ETH', $this->balances);
         $this->balances = $this->addBalanceToArray('ETH', $result, $this->balances);
     }
+
     private function getETCBalance(array $wallets): void
     {
-        $result = (new ETHETC())->getBalances($wallets, 'ETC');
+        $result = (new ETHETC())->getBalances($wallets, 'ETC', $this->balances);
         $this->balances = $this->addBalanceToArray('ETC', $result, $this->balances);
     }
 

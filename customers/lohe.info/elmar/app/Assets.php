@@ -24,6 +24,7 @@ class Assets
 //        var_dump($this->balances);exit;
         $balancesWallets = new WalletAssets($wallets, $this->balances);
         $balancesWallets->getBalances();
+//        var_dump($this->balances);exit;
 
         return $this->balances;
     }

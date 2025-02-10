@@ -74,61 +74,61 @@ $assets = new Assets($balances);
 //var_dump($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']));
 //exit;
 
-$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin,kaspa,ark,hydra,tron';
+//$cgCoinSymbols = 'bitcoin,ethereum,defichain,ethereum-classic,solana,pluton,cardano,dogecoin,litecoin,siacoin,kaspa,ark,hydra,tron';
 
-$marina = 0.09693437;
+//$marina = 0.09693437;
 
-//$cryptoAssets = [
-////    'btc'   => [
-////        'wallets' => [
-////            'bc1qxp5tkfa3n5lhyc78ej5rz2ph48t87e7zxmwjuh',
-////        ],
-////        'amount'  => (0.35134237 + 0.00464358 + 0.00041379),
-////        'cgName'  => 'bitcoin',
-////    ],
-////    'etc'   => [
-////        'wallets' => [
-////            '',
-////        ],
-////        'amount'  => 15 + 27.17877301,
-////        'cgName'  => 'ethereum-classic',
-////    ],
-////    'eth'   => [
-////        'wallets' => [
-////            '',
-////        ],
-////        'amount'  => 0.00638006 + 0.04289475 + 0.00314482,
-////        //        'amount'  => 0.2370112,
-////        'cgName'  => 'ethereum',
-////    ],
-////'ltc'   => [
-////    'wallets' => [
-////        '',
-////    ],
-////    'amount'  => 2.34873,
-////    'cgName'  => 'litecoin',
-////],
-////'sol'   => [
-////    'wallets' => [
-////        '',
-////    ],
-////    'amount'  => 23.2706 + 0.19636986 + 1.54079391 + 0.352468693,
-////    'cgName'  => 'solana',
-////],
-////    'ada'   => [
-////        'wallets' => [
-////            '',
-////        ],
-////        'amount'  => 772.092,
-////        'cgName'  => 'cardano',
-////    ],
-////'doge'  => [
-////    'wallets' => [
-////        '',
-////    ],
-////    'amount'  => (972.878 + 1899.83),
-////    'cgName'  => 'dogecoin',
-////],
+$cryptoAssets = [
+//    'btc'   => [
+//        'wallets' => [
+//            'bc1qxp5tkfa3n5lhyc78ej5rz2ph48t87e7zxmwjuh',
+//        ],
+//        'amount'  => (0.35134237 + 0.00464358 + 0.00041379),
+//        'cgName'  => 'bitcoin',
+//    ],
+//    'etc'   => [
+//        'wallets' => [
+//            '',
+//        ],
+//        'amount'  => 15 + 27.17877301,
+//        'cgName'  => 'ethereum-classic',
+//    ],
+//    'eth'   => [
+//        'wallets' => [
+//            '',
+//        ],
+//        'amount'  => 0.00638006 + 0.04289475 + 0.00314482,
+//        //        'amount'  => 0.2370112,
+//        'cgName'  => 'ethereum',
+//    ],
+//'ltc'   => [
+//    'wallets' => [
+//        '',
+//    ],
+//    'amount'  => 2.34873,
+//    'cgName'  => 'litecoin',
+//],
+//'sol'   => [
+//    'wallets' => [
+//        '',
+//    ],
+//    'amount'  => 23.2706 + 0.19636986 + 1.54079391 + 0.352468693,
+//    'cgName'  => 'solana',
+//],
+//    'ada'   => [
+//        'wallets' => [
+//            '',
+//        ],
+//        'amount'  => 772.092,
+//        'cgName'  => 'cardano',
+//    ],
+//'doge'  => [
+//    'wallets' => [
+//        '',
+//    ],
+//    'amount'  => (972.878 + 1899.83),
+//    'cgName'  => 'dogecoin',
+//],
 //'plu' => [
 //    'wallets' => [
 //        '',
@@ -136,43 +136,42 @@ $marina = 0.09693437;
 //    'amount'  => (500.267 + 58 + 367.76),
 //    'cgName'  => 'pluton',
 //],
-//'kas' => [
+'kas' => [
+    'wallets' => [
+        '',
+    ],
+    'amount'  => 3457.51 + 107.915,
+    'cgName'  => 'kaspa',
+],
+//'sc'    => [
 //    'wallets' => [
 //        '',
 //    ],
-//    'amount'  => 3457.51 + 107.915,
-//    'cgName'  => 'kaspa',
+//    'amount'  => 98624.5678,
+//    'cgName'  => 'siacoin',
 //],
-////'sc'    => [
-////    'wallets' => [
-////        '',
-////    ],
-////    'amount'  => 98624.5678,
-////    'cgName'  => 'siacoin',
-////],
-////    'ark'   => [
-////        'wallets' => [
-////            'Aei4J7ceReK8DKq5fj1zZ5z36VprBXysoP',
-////        ],
-////        'amount'  => 2074,
-////        'cgName'  => 'ark',
-////    ],
-////'hydra' => [
-////    'wallets' => [
-////        '',
-////    ],
-////    'amount'  => 1527.73,
-////    'cgName'  => 'hydra',
-////],
-////'trx'   => [
-////    'wallets' => [
-////        '',
-////    ],
-////    'amount'  => 722,
-////    'cgName'  => 'tron',
-////],
-//];
-$eurAmountTotal = 0;
+//    'ark'   => [
+//        'wallets' => [
+//            'Aei4J7ceReK8DKq5fj1zZ5z36VprBXysoP',
+//        ],
+//        'amount'  => 2074,
+//        'cgName'  => 'ark',
+//    ],
+//'hydra' => [
+//    'wallets' => [
+//        '',
+//    ],
+//    'amount'  => 1527.73,
+//    'cgName'  => 'hydra',
+//],
+//'trx'   => [
+//    'wallets' => [
+//        '',
+//    ],
+//    'amount'  => 722,
+//    'cgName'  => 'tron',
+//],
+];
 
 
 $cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['cgCoinMapping'])), 'usd,eur,btc');
@@ -184,16 +183,12 @@ $cgPrices = $cgc->simple()->getPrice(implode(',', array_values($_ENV['config']['
 //    }
 //}
 //exit;
-//$cgPrices = $cgc->simple()->getPrice('xrp', 'usd,eur,btc');
-//var_dump($cgPrices);
-//exit;
 
+$eurAmountTotal = 0;
 $dataPointsArray_str = '';
 $tableContent_str = '';
 
-$assets_array = $assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']);
-ksort($assets_array);
-foreach ($assets_array as $coin => $info)
+foreach ($assets->getBalances($_ENV['config']['assets']['wallets'], $_ENV['config']['assets']['exchanges']) as $coin => $info)
 {
     $coinUpper = strtoupper($coin);
     if(array_key_exists($info['cgName'], $cgPrices))
