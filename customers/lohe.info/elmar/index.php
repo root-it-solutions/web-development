@@ -210,7 +210,7 @@ foreach ($assets_array as $coin => $info)
 }
 
 $body = '<br />';
-$tableContent_str .= '<tr class="total"><td>Total</td><td></td><td>' . number_format($eurAmountTotal, 2, ',', '.') . ' &euro;</td></tr>';
+$tableContent_str .= '<tr class="total"><td>Total</td><td></td><td>' . number_format($eurAmountTotal, 2, ',', '.') . '</td></tr>';
 
 $path_to_file = 'main.html';
 $file_contents = file_get_contents($path_to_file);

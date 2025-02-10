@@ -143,7 +143,10 @@
 </table>
 {[[body]]}
 <script>
-    $("#example").DataTable({order: [[2, 'desc']]});
+    $("#example").DataTable({
+        order: [[2, 'desc']],
+        paging: false,
+    });
 </script>
 </body>
 </html>
