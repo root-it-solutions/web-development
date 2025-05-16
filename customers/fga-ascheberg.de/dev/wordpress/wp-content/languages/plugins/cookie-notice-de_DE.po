@@ -1,0 +1,299 @@
+# Translation of Plugins - Cookie Notice &amp; Compliance for GDPR / CCPA - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - Cookie Notice &amp; Compliance for GDPR / CCPA - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-07-08 20:14:02+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - Cookie Notice &amp; Compliance for GDPR / CCPA - Stable (latest release)\n"
+
+#: includes/welcome.php:139
+msgid "Please fill all the required fields."
+msgstr "Bitte fülle alle Pflichtfelder aus."
+
+#: includes/settings.php:1605
+msgid "Bar opacity"
+msgstr "Deckkraft der Leiste"
+
+#: includes/settings.php:187
+msgid "Dark"
+msgstr "Dunkel"
+
+#: includes/settings.php:186
+msgid "Light"
+msgstr "Hell"
+
+#: includes/settings.php:823
+msgid "On click"
+msgstr "Bei Klick"
+
+#: includes/settings.php:1524
+msgid "Select the animation style."
+msgstr "Wähle den Animationsstil aus."
+
+#: includes/settings.php:818
+msgid "Refuse consent"
+msgstr "Zustimmung ablehnen"
+
+#: includes/settings.php:281 includes/settings.php:819
+msgid "Revoke consent"
+msgstr "Zustimmung wiederrufen"
+
+#: includes/settings.php:280
+msgid "You can revoke your consent any time using the Revoke consent button."
+msgstr "Du kannst deine Zustimmung jederzeit widerrufen, indem du den den Button „Zustimmung widerrufen“ klickst."
+
+#: includes/settings.php:1505
+msgid "Select location for the notice."
+msgstr "Wähle die Position für den Hinweis aus."
+
+#: includes/settings.php:1239
+msgid "The text of the option to accept the notice and make it disappear."
+msgstr "Der Text für die Option, den Hinweis zu akzeptieren und zu schließen."
+
+#: includes/settings.php:203
+msgid "Banner"
+msgstr "Banner"
+
+#: includes/settings.php:1423
+msgid "Select the privacy policy link position."
+msgstr "Wähle die Position des Links zur Datenschutzerklärung."
+
+#: includes/settings.php:1366
+msgid "The text of the privacy policy button."
+msgstr "Der Text des Button für die Datenschutzerklärung."
+
+#: includes/settings.php:1280
+msgid "Body"
+msgstr "Body"
+
+#: includes/settings.php:1279
+msgid "Head"
+msgstr "Head"
+
+#: includes/settings.php:216
+msgid "An hour"
+msgstr "eine Stunde"
+
+#: includes/settings.php:192
+msgid "Manual"
+msgstr "Manuell"
+
+#: includes/settings.php:191
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: includes/settings.php:835
+msgid "Button class"
+msgstr "Button-Klasse"
+
+#: includes/settings.php:1363
+msgid "Enable privacy policy link."
+msgstr "Link zu den Datenschutzrichtlinien aktivieren."
+
+#: includes/settings.php:258 includes/settings.php:282
+#: includes/settings.php:817
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"
+
+#: includes/settings.php:1580
+msgid "Enter additional button CSS classes separated by spaces."
+msgstr "Gib zusätzliche CSS-Klassen für Buttons mit Leerzeichen getrennt ein."
+
+#: includes/settings.php:1396
+msgid "Synchronize with WordPress Privacy Policy page."
+msgstr "Synchronisiere mit der Seite Datenschutzerklärung in WordPress."
+
+#: includes/settings.php:1413
+msgid "Select the privacy policy link target."
+msgstr "Wähl das Linkziel zur Datenschutzerklärung aus."
+
+#: includes/settings.php:1287
+msgid "The code to be used in your site footer, before the closing body tag."
+msgstr "Der Code, der in deinem Website-Footer vor dem schließenden Body-Tag verwendet werden soll."
+
+#: includes/settings.php:1283
+msgid "The code to be used in your site header, before the closing head tag."
+msgstr "Der Code, der in deinem Header vor dem schließenden Head-Tag verwendet werden soll."
+
+#: includes/settings.php:821
+msgid "Reloading"
+msgstr "Lade"
+
+#: includes/settings.php:820
+msgid "Script blocking"
+msgstr "Script-Blockierung"
+
+#: includes/settings.php:208
+msgid "Text color"
+msgstr "Textfarbe"
+
+#: includes/settings.php:210
+msgid "Bar color"
+msgstr "Hintergrundfarbe"
+
+#: includes/settings.php:217
+msgid "1 day"
+msgstr "1 Tag"
+
+#: includes/settings.php:218
+msgid "1 week"
+msgstr "1 Woche"
+
+#: includes/consent-logs-list-table.php:60 includes/settings.php:219
+msgid "1 month"
+msgstr "1 Monat"
+
+#: includes/consent-logs-list-table.php:62 includes/settings.php:220
+msgid "3 months"
+msgstr "3 Monate"
+
+#: includes/consent-logs-list-table.php:64 includes/settings.php:221
+msgid "6 months"
+msgstr "6 Monate"
+
+#: includes/consent-logs-list-table.php:66 includes/settings.php:222
+msgid "1 year"
+msgstr "1 Jahr"
+
+#: includes/settings.php:223
+msgid "infinity"
+msgstr "unbegrenzt"
+
+#: includes/settings.php:229
+msgid "Fade"
+msgstr "Ausblenden"
+
+#: includes/settings.php:230
+msgid "Slide"
+msgstr "Ausgleiten"
+
+#: includes/dashboard.php:641 includes/settings.php:325
+#: includes/settings.php:934 includes/settings.php:948
+#: includes/settings.php:967 includes/welcome.php:416
+msgid "Cookie Notice"
+msgstr "Cookie Notice"
+
+#: includes/settings.php:204 includes/settings.php:815
+msgid "Message"
+msgstr "Meldungstext"
+
+#: includes/settings.php:816
+msgid "Button text"
+msgstr "Buttontext"
+
+#: includes/settings.php:832
+msgid "Position"
+msgstr "Position"
+
+#: includes/settings.php:833
+msgid "Animation"
+msgstr "Animation"
+
+#: includes/settings.php:834
+msgid "Colors"
+msgstr "Farben"
+
+#: includes/settings.php:1379
+msgid "-- select page --"
+msgstr "-- Seite auswählen --"
+
+#: cookie-notice.php:1306
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/settings.php:279
+msgid "No"
+msgstr "Nein"
+
+#: includes/settings.php:235
+msgid "Footer"
+msgstr "Footer"
+
+#: includes/settings.php:822
+msgid "On scroll"
+msgstr "Beim Scrollen"
+
+#: includes/settings.php:827
+msgid "Script placement"
+msgstr "Script-Platzierung"
+
+#: includes/settings.php:197
+msgid "Custom link"
+msgstr "Benutzerdefinierter Link"
+
+#: includes/settings.php:196
+msgid "Page link"
+msgstr "Seiten-Link"
+
+#: includes/settings.php:234
+msgid "Header"
+msgstr "Header"
+
+#: includes/settings.php:804 includes/settings.php:828
+msgid "Deactivation"
+msgstr "Deaktivierung"
+
+#: includes/settings.php:278
+msgid "Ok"
+msgstr "OK"
+
+#: includes/settings.php:277
+msgid "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it."
+msgstr "Diese Website benutzt Cookies. Wenn du die Website weiter nutzt, gehen wir von deinem Einverständnis aus."
+
+#: includes/settings.php:1567
+msgid "Enable if you want all plugin data to be deleted on deactivation."
+msgstr "Aktiviere diese Funktion, wenn du möchtest, dass alle Plugin-Daten gelöscht werden, sobald das Plugin deaktiviert wird."
+
+#: includes/settings.php:1226
+msgid "Enter the cookie notice message."
+msgstr "Gib hier den Meldungstext ein."
+
+#: includes/settings.php:1486
+msgid "Select where all the plugin scripts should be placed."
+msgstr "Wähle, wo alle Plugin-Skripte abgelegt werden sollen."
+
+#: includes/privacy-consent.php:662 includes/settings.php:2173
+msgid "Settings restored to defaults."
+msgstr "Standard-Einstellungen wiederhergestellt."
+
+#: includes/settings.php:2276
+msgid "Are you sure you want to reset these settings to defaults?"
+msgstr "Bist du dir sicher, dass du die Einstellungen zurücksetzen möchtest?"
+
+#: includes/settings.php:610
+msgid "Reset to defaults"
+msgstr "Auf Standard-Einstellungen zurücksetzen"
+
+#: includes/settings.php:1254
+msgid "Enable to give to the user the possibility to refuse third party non functional cookies."
+msgstr "Aktivieren, um dem Benutzer die Möglichkeit zu geben, nicht funktionale Cookies von Drittanbietern abzulehnen."
+
+#: includes/settings.php:1403
+msgid "Enter the full URL starting with http(s)://"
+msgstr "Gib die vollständige URL ein, beginnend mit http(s)://"
+
+#: includes/settings.php:1390
+msgid "Select from one of your site's pages."
+msgstr "Wähle eine der vorhandenen Seiten deiner Website aus."
+
+#: includes/settings.php:180 includes/welcome.php:497
+msgid "Top"
+msgstr "Oben"
+
+#: includes/settings.php:181 includes/welcome.php:496
+msgid "Bottom"
+msgstr "Unten"
+
+#: includes/modules/wordpress/privacy-consent.php:38
+msgid "WordPress"
+msgstr "WordPress"
+
+#: includes/settings.php:185 includes/settings.php:228
+msgid "None"
+msgstr "Keine"

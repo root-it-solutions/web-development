@@ -1,0 +1,23 @@
+.breadcrumbs {
+	background-color: $breadcrumbs_bg_color;
+}
+
+.breadcrumbs__title {
+	font-style: $breadcrumbs_title_font_style;
+	text-transform: $breadcrumbs_title_transform;
+	font-weight: $breadcrumbs_title_font_weight;
+	letter-spacing: $breadcrumbs_title_letter_spacing{px};
+	color: $breadcrumbs_title_color;
+}
+
+.breadcrumbs__item {
+	text-transform: $breadcrumbs_text_transform;
+	font-style: $breadcrumbs_text_font_style;
+	font-weight: $breadcrumbs_text_font_weight;
+	letter-spacing: $breadcrumbs_text_letter_spacing{px};
+	color: $breadcrumbs_text_color;
+}
+
+.breadcrumbs a:hover {
+	color: $breadcrumbs_text_color_hover;
+}

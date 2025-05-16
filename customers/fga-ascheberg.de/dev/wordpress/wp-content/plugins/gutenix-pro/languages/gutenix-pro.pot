@@ -1,0 +1,321 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gutenix Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-19 12:46+0300\n"
+"PO-Revision-Date: 2018-08-29 14:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: Gutenix\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;_ex:1,2c;_n:1,2;_nx:4c,1,2;"
+"_n_noop:1,2;_nx_noop:4c,1,2\n"
+"esc_attr__;_x: 1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: framework\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: includes/modules/blog-layouts.php:46
+msgid "Layout"
+msgstr ""
+
+#: includes/modules/blog-layouts.php:70
+msgid "Listing 1"
+msgstr ""
+
+#: includes/modules/blog-layouts.php:71
+msgid "Listing 2"
+msgstr ""
+
+#: includes/modules/blog-layouts.php:72
+msgid "Grid"
+msgstr ""
+
+#: includes/modules/blog-layouts.php:73
+msgid "Masonry"
+msgstr ""
+
+#: includes/modules/blog-layouts.php:74
+msgid "Justify"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:46
+msgid "Breadcrumbs"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:52
+msgid "Show Breadcrumbs"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:59
+msgid "Show Breadcrumbs on front page"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:69
+msgid "Show page title in breadcrumbs area"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:79
+msgid "Page title HTML Tag"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:99
+msgid "Show full/minified path"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:104
+msgid "Full"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:105
+msgid "Minified"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:113
+msgid "Container type"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:118
+msgid "Boxed"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:119
+msgid "Full Width"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:197
+msgid "404 Not Found"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:198
+msgid "Archives"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:199
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:200
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:201
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:202
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:205
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:206
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:207
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:208
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:209
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:210
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: includes/modules/breadcrumbs.php:211
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: includes/modules/header-sticky.php:57
+msgid "Sticky Header"
+msgstr ""
+
+#: includes/modules/header-sticky.php:62
+msgid "Enable Sticky Header"
+msgstr ""
+
+#: includes/modules/header-sticky.php:69
+msgid "Effects Offset"
+msgstr ""
+
+#: includes/modules/header-sticky.php:84
+#: includes/modules/header-transparent.php:116
+msgid "Enable on Tablet"
+msgstr ""
+
+#: includes/modules/header-sticky.php:94
+#: includes/modules/header-transparent.php:124
+msgid "Enable on Mobile"
+msgstr ""
+
+#: includes/modules/header-transparent.php:48 includes/post-meta.php:91
+msgid "Transparent Header"
+msgstr ""
+
+#: includes/modules/header-transparent.php:53
+msgid "Enable Transparent Header"
+msgstr ""
+
+#: includes/modules/header-transparent.php:61
+msgid "Disable on Posts page?"
+msgstr ""
+
+#: includes/modules/header-transparent.php:72
+msgid "Disable on Archives & Search?"
+msgstr ""
+
+#: includes/modules/header-transparent.php:83
+msgid "Disable on 404 page?"
+msgstr ""
+
+#: includes/modules/header-transparent.php:94
+msgid "Disable on Pages?"
+msgstr ""
+
+#: includes/modules/header-transparent.php:105
+msgid "Disable on Posts?"
+msgstr ""
+
+#: includes/modules/header-transparent.php:132
+msgid "Different Logo?"
+msgstr ""
+
+#: includes/modules/header-transparent.php:140
+msgid "Logo"
+msgstr ""
+
+#: includes/modules/header-transparent.php:152
+msgid "Background"
+msgstr ""
+
+#: includes/modules/header-transparent.php:161
+msgid "Background Alpha"
+msgstr ""
+
+#: includes/modules/header-transparent.php:175
+msgid "Site Title color"
+msgstr ""
+
+#: includes/modules/header-transparent.php:184
+msgid "Link color"
+msgstr ""
+
+#: includes/modules/header-transparent.php:192
+msgid "Link hover color"
+msgstr ""
+
+#: includes/modules/header-transparent.php:203
+msgid "Disable on WooCommerce Product Pages?"
+msgstr ""
+
+#: includes/post-meta.php:51
+msgid "Gutenix Page Settings"
+msgstr ""
+
+#: includes/post-meta.php:59
+msgid "Page Layout"
+msgstr ""
+
+#: includes/post-meta.php:60
+msgid "Page layout global settings redefining."
+msgstr ""
+
+#: includes/post-meta.php:63 includes/post-meta.php:71
+#: includes/post-meta.php:81 includes/post-meta.php:88
+#: includes/post-meta.php:96
+msgid "Inherit"
+msgstr ""
+
+#: includes/post-meta.php:66
+msgid "Show Page Title"
+msgstr ""
+
+#: includes/post-meta.php:67
+msgid "Page title global settings redefining."
+msgstr ""
+
+#: includes/post-meta.php:72
+msgid "Show"
+msgstr ""
+
+#: includes/post-meta.php:73
+msgid "Hide"
+msgstr ""
+
+#: includes/post-meta.php:77
+msgid "Header Layout"
+msgstr ""
+
+#: includes/post-meta.php:78
+msgid "Header layout global settings redefining."
+msgstr ""
+
+#: includes/post-meta.php:84
+msgid "Footer Layout"
+msgstr ""
+
+#: includes/post-meta.php:85
+msgid "Footer layout global settings redefining."
+msgstr ""
+
+#: includes/post-meta.php:92
+msgid "Transparent header global settings redefining."
+msgstr ""
+
+#: includes/post-meta.php:97
+msgid "Enable"
+msgstr ""
+
+#: includes/post-meta.php:98
+msgid "Disable"
+msgstr ""
+
+#: includes/post-meta.php:102
+msgid "Disable Breadcrumbs"
+msgstr ""
+
+#: includes/post-meta.php:106 includes/post-meta.php:115
+#: includes/post-meta.php:124
+msgid "Yes"
+msgstr ""
+
+#: includes/post-meta.php:107 includes/post-meta.php:116
+#: includes/post-meta.php:125
+msgid "No"
+msgstr ""
+
+#: includes/post-meta.php:111
+msgid "Disable Top Panel"
+msgstr ""
+
+#: includes/post-meta.php:120
+msgid "Disable Footer Widgets Area"
+msgstr ""

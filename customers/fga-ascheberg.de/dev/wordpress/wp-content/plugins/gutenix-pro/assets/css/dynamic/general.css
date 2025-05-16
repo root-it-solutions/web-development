@@ -1,0 +1,11 @@
+/* Page Title */
+body.page .entry-header .entry-title,
+.page-header .page-title {
+	text-transform: $page_title_text_transform;
+	font-style: $page_title_font_style;
+	font-weight: $page_title_font_weight;
+	line-height: $page_title_line_height;
+	letter-spacing: $page_title_letter_spacing{px};
+	text-align: $page_title_text_align;
+	color: $page_title_text_color;
+}

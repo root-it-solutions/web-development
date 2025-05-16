@@ -1,0 +1,18 @@
+/* Top Panel */
+.top-panel {
+	border: 0;
+	border-bottom-width: $top_panel_border_width{px};
+	border-style: solid;
+	border-color: $top_panel_border_color;
+}
+
+/* Main Menu */
+#site-navigation.main-navigation--default .menu .sub-menu {
+	width: $sub_menu_width{px};
+}
+#site-navigation.main-navigation--default .menu .sub-menu .menu-item + .menu-item {
+	border: 0;
+	border-top-width: $sub_menu_link_border_width{px};
+	border-style: solid;
+	border-color: $sub_menu_link_border_color;
+}
