@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Cookie Notice &amp; Compliance for GDPR / CCPA - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-08 20:14:02+0000\n"
+"PO-Revision-Date: 2025-05-18 13:07:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,48 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: de\n"
 "Project-Id-Version: Plugins - Cookie Notice &amp; Compliance for GDPR / CCPA - Stable (latest release)\n"
+
+#: includes/settings.php:162
+msgid "Page"
+msgstr "Seite"
+
+#: includes/settings.php:2411
+msgid "or"
+msgstr "oder"
+
+#: includes/settings.php:2745
+msgid "Guest"
+msgstr "Gast"
+
+#: includes/welcome.php:297
+msgid "Yearly"
+msgstr "Jährlich"
+
+#: includes/dashboard.php:168
+msgctxt "threshold limit"
+msgid "Used"
+msgstr "Verwendet"
+
+#: includes/dashboard.php:169
+msgctxt "threshold limit"
+msgid "Free"
+msgstr "Kostenlos"
+
+#: includes/settings.php:685
+msgid "F.A.Q."
+msgstr "F.A.Q."
+
+#: includes/settings.php:246
+msgid "Gold"
+msgstr "Gold"
+
+#: cookie-notice.php:1358
+msgid "Other"
+msgstr "Andere"
+
+#: cookie-notice.php:1372
+msgid "Cancel"
+msgstr "Abbrechen"
 
 #: includes/welcome.php:139
 msgid "Please fill all the required fields."
