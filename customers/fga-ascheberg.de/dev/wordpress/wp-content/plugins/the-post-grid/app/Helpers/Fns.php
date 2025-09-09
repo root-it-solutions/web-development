@@ -687,11 +687,11 @@ class Fns {
 			$default_term     = isset( $data[ $default_term_key ] ) ? $data[ $default_term_key ] : '';
 
 			if ( 1 == $countTax ) {
-				$allText = $data['tax_filter_all_text'] ?: __( 'All ', 'the-post-grid' ) . $taxonomy_label;
+				$allText = ! empty( $data['tax_filter_all_text'] ) ? $data['tax_filter_all_text'] : __( 'All ', 'the-post-grid' ) . $taxonomy_label;
 			} elseif ( 2 == $countTax ) {
-				$allText = $data['tax_filter_all_text2'] ?: __( 'All ', 'the-post-grid' ) . $taxonomy_label;
+				$allText = ! empty( $data['tax_filter_all_text2'] ) ? $data['tax_filter_all_text2'] : __( 'All ', 'the-post-grid' ) . $taxonomy_label;
 			} elseif ( 3 == $countTax ) {
-				$allText = $data['tax_filter_all_text3'] ?: __( 'All ', 'the-post-grid' ) . $taxonomy_label;
+				$allText = ! empty( $data['tax_filter_all_text3'] ) ? $data['tax_filter_all_text3'] : __( 'All ', 'the-post-grid' ) . $taxonomy_label;
 			} else {
 				$allText = __( 'All ', 'the-post-grid' ) . $taxonomy_label;
 			}
@@ -4100,13 +4100,30 @@ class Fns {
 	 *
 	 * @since 1.0.9
 	 */
-	public static function get_all_taxonomy_guten() {
+	public static function get_all_taxonomy_guten_opld() {
 		$post_types     = self::get_post_types();
 		$taxonomies     = get_taxonomies( [], 'objects' );
 		$all_taxonomies = [];
 		foreach ( $taxonomies as $taxonomy => $object ) {
-			if ( ! isset( $object->object_type[0] ) || ! in_array( $object->object_type[0], array_keys( $post_types ) )
-			     || in_array( $taxonomy, self::get_excluded_taxonomy() )
+			if ( ! isset( $object->object_type[0] ) || ! in_array( $object->object_type[0], array_keys( $post_types ) ) || in_array( $taxonomy, self::get_excluded_taxonomy() ) ) {
+				continue;
+			}
+			$all_taxonomies[ $taxonomy ] = self::tpg_get_categories_by_id( $taxonomy );
+		}
+
+		return $all_taxonomies;
+	}
+
+	public static function get_all_taxonomy_guten() {
+		$post_types     = self::get_post_types();
+		$taxonomies     = get_taxonomies( [], 'objects' );
+		$all_taxonomies = [];
+
+		foreach ( $taxonomies as $taxonomy => $object ) {
+			if (
+				! isset( $object->object_type ) ||
+				empty( array_intersect( (array) $object->object_type, array_keys( $post_types ) ) ) ||
+				in_array( $taxonomy, self::get_excluded_taxonomy(), true )
 			) {
 				continue;
 			}
@@ -5139,6 +5156,36 @@ class Fns {
 		}
 
 		return $taxonomy_list;
+	}
+
+	/**
+     * Get plugin install button
+     *
+     * @param $slug
+     */
+
+	public static function get_plugin_install_button( $slug ) {
+		$plugin_file = $slug . '/' . $slug . '.php';
+		$plugin_path = WP_PLUGIN_DIR . '/' . $plugin_file;
+
+		if ( is_plugin_active( $plugin_file ) ) {
+			$label = 'Activated';
+			$class = 'success-class';
+		} elseif ( file_exists( $plugin_path ) ) {
+			$label = 'Activate Now';
+			$class = 'not-activated';
+		} else {
+			$label = 'Install Now';
+			$class = 'install-plugins';
+		}
+		?>
+        <a data-slug="<?php echo esc_attr( $slug ); ?>"
+           href="https://wordpress.org/plugins/<?php echo esc_attr( $slug ); ?>/"
+           target="_blank"
+           class="rt-admin-btn <?php echo esc_attr( $class ) ?>">
+			<?php echo esc_html( $label ) ?>
+        </a>
+		<?php
 	}
 
 }

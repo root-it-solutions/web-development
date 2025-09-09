@@ -7,6 +7,7 @@
 
 namespace RT\ThePostGrid\Controllers\Admin;
 use RT\ThePostGrid\Controllers\Admin\Notice\EidSpecial;
+use RT\ThePostGrid\Controllers\Admin\Notice\SummerSale;
 
 // Do not allow directly accessing this file.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -36,7 +37,8 @@ class NoticeController {
 		add_action( 'admin_init', [ __CLASS__, 'rttpg_notice' ] );
 
 		//Eid Special Deal
-		new EidSpecial();
+//		new EidSpecial();
+		new SummerSale();
 	}
 
 	/**

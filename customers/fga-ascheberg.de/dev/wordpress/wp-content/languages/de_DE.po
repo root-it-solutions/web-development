@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-18 00:50:35+0000\n"
+"PO-Revision-Date: 2025-06-08 12:39:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4744,7 +4744,7 @@ msgstr "Ein erweiterter Block, der das Anzeigen von Inhaltstypen anhand verschie
 #: wp-includes/blocks/query/block.json
 msgctxt "block title"
 msgid "Query Loop"
-msgstr "Abfrage-Loop"
+msgstr "Abfrage-Schleife"
 
 #: wp-includes/blocks/query-title/block.json
 msgctxt "block description"
@@ -7815,7 +7815,7 @@ msgstr "Ob das Theme den Title-Tag des Dokuments verwalten kann."
 
 #: wp-includes/theme.php:4267
 msgid "Allows use of HTML5 markup for search forms, comment forms, comment lists, gallery, and caption."
-msgstr "Erlaubt die Verwendung von HTML5-Markup für Such- und Kommentar-Formulare, Kommentar-Listen, Galerien und Bildunterschriften."
+msgstr "Erlaubt die Verwendung von HTML5-Markup für Such- und Kommentar-Formulare, Kommentar-Listen, Galerien und Untertiteln."
 
 #: wp-includes/theme.php:4259
 msgid "Whether theme opts in to the editor styles CSS wrapper."
@@ -8227,7 +8227,7 @@ msgstr "Videotitel"
 
 #: wp-includes/media-template.php:646
 msgid "Caption&hellip;"
-msgstr "Beschriftung &hellip;"
+msgstr "Untertitel …"
 
 #. translators: Hidden accessibility text.
 #: wp-includes/media-template.php:442 wp-includes/js/dist/edit-site.js:41530
@@ -9362,7 +9362,7 @@ msgstr "Datenschutzerklärung"
 
 #: wp-login.php:1281
 msgid "User action confirmed."
-msgstr "Benutzeraktion bestätigt."
+msgstr "Die Benutzeraktion wurde bestätigt."
 
 #. translators: %s: Action name.
 #: wp-includes/user.php:4773
@@ -11263,7 +11263,7 @@ msgstr "Die Beschreibung des Anhangs."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:997
 msgid "The attachment caption."
-msgstr "Die Beschriftung des Anhangs."
+msgstr "Der Untertitel des Anhangs."
 
 #: wp-includes/option.php:2857
 msgid "Default post category."
@@ -11684,11 +11684,11 @@ msgstr "Beschreibung für den Anhang, wie sie in der Datenbank vorliegt."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1011
 msgid "HTML caption for the attachment, transformed for display."
-msgstr "Für die Anzeige umgewandelte HTML-Beschriftung für den Anhang."
+msgstr "Der für die Anzeige umgewandelte HTML-Untertitel des Anhangs."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1006
 msgid "Caption for the attachment, as it exists in the database."
-msgstr "Beschriftung für den Anhang, wie sie in der Datenbank vorliegt."
+msgstr "Der Untertitel für den Anhang, wie er in der Datenbank vorliegt."
 
 #: wp-includes/class-wp-customize-manager.php:6128
 msgid "Please enter a valid YouTube URL."
@@ -15480,7 +15480,7 @@ msgstr "Wird zugeschnitten &hellip;"
 #: wp-includes/media-template.php:1486 wp-includes/media-template.php:1502
 #: wp-includes/widgets/class-wp-widget-media-video.php:87
 msgid "Tracks (subtitles, captions, descriptions, chapters, or metadata)"
-msgstr "Titel (Untertitel, Beschriftungen, Beschreibungen, Kapitel oder Metadaten)"
+msgstr "Titel (Untertitel, Beschreibungen, Kapitel oder Metadaten)"
 
 #: wp-includes/class-wp-customize-widgets.php:721
 msgid "Move to another area&hellip;"
@@ -16413,7 +16413,7 @@ msgstr "Länge:"
 
 #: wp-includes/script-loader.php:1107
 msgid "Captions/Subtitles"
-msgstr "Beschriftungen/Untertitel"
+msgstr "Untertitel"
 
 #: wp-includes/script-loader.php:1102
 msgid "Unmute"
@@ -17926,7 +17926,7 @@ msgstr "Die Anhang-ID ist ungültig."
 
 #: wp-includes/registration-functions.php:9 wp-includes/registration.php:9
 msgid "This file no longer needs to be included."
-msgstr "Diese Datei muss nicht mehr per include() oder require() eingebunden werden."
+msgstr "Die Einbindung dieser Datei ist nicht mehr erforderlich."
 
 #: wp-includes/widgets/class-wp-widget-archives.php:223
 #: wp-includes/widgets/class-wp-widget-categories.php:193
@@ -18024,7 +18024,7 @@ msgstr "Name der neuen Linkkategorie"
 
 #: wp-includes/taxonomy.php:148
 msgid "Update Link Category"
-msgstr "Linkkategorie überarbeiten"
+msgstr "Linkkategorie aktualisieren"
 
 #: wp-includes/taxonomy.php:146
 msgid "All Link Categories"
@@ -20045,7 +20045,7 @@ msgstr "Zuletzt aktualisiert"
 
 #: wp-includes/deprecated.php:66
 msgid "new WordPress Loop"
-msgstr "Neue WordPress-Loop"
+msgstr "Neue WordPress-Schleife"
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:30
 msgid "Tag Cloud"
@@ -21008,7 +21008,7 @@ msgstr "Bild bearbeiten"
 #: wp-includes/js/dist/block-editor.js:73470 wp-admin/includes/media.php:1405
 #: wp-admin/includes/media.php:3263
 msgid "Caption"
-msgstr "Beschriftung"
+msgstr "Untertitel"
 
 #: wp-includes/class-wp-editor.php:1337 wp-includes/media-template.php:830
 #: wp-admin/includes/media.php:1490 wp-admin/includes/media.php:2989
