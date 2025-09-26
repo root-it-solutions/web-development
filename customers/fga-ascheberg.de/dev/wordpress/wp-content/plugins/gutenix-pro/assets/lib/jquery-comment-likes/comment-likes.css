@@ -1,0 +1,58 @@
+.gutenix_pro_comment_votes-like-dislike-wrapper .gutenix_pro_comment_votes-like-wrap,
+.gutenix_pro_comment_votes-like-dislike-wrapper .gutenix_pro_comment_votes-dislike-wrap {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 7px;
+}
+
+.gutenix_pro_comment_votes-like-dislike-trigger,
+.gutenix_pro_comment_votes-count-wrap {
+    display: inline-block;
+    vertical-align: top;
+    height: 20px;
+}
+.gutenix_pro_comment_votes-like-dislike-trigger {
+    position: relative;
+    margin-right: 3px;
+    padding-right: 8px;
+}
+.gutenix_pro_comment_votes-like-dislike-trigger:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 1px;
+    height: 14px;
+    background-color: #e8e9eb;
+}
+
+.gutenix_pro_comment_votes-like-dislike-wrapper svg {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-top: 2px;
+}
+.gutenix_pro_comment_votes-dislike-trigger svg {
+    margin: 3px 0 0;
+    transform: rotateX(-180deg);
+}
+.gutenix_pro_comment_votes-like-dislike-wrapper svg path{
+    fill: #a0a3aa;
+}
+
+.gutenix_pro_comment_votes-like-dislike-wrapper .gutenix_pro_comment_votes-count-wrap {
+    min-width: 30px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #a0a3aa;
+}
+
+.gutenix_pro_comment_votes-like-dislike-trigger {
+    cursor: pointer;
+}
+
+.gutenix_pro_comment_votes-message {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #999;
+}

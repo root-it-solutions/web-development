@@ -1,0 +1,860 @@
+# Translation of Plugins - WordPress Popular Posts - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - WordPress Popular Posts - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-12-26 17:12:07+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - WordPress Popular Posts - Stable (latest release)\n"
+
+#: src/Admin/screen-tools.php:63
+msgid "Use original format"
+msgstr "Das originale Format verwenden"
+
+#: src/Admin/screen-tools.php:60
+msgid "Thumbnail format"
+msgstr "Vorschaubild-Format"
+
+#: src/Admin/screen-tools.php:39
+msgid "Reset thumbnail"
+msgstr "Vorschaubild zurücksetzen"
+
+#: src/Admin/screen-tools.php:157
+msgid "Load popular posts list via AJAX"
+msgstr "Liste beliebter Beiträge mittels AJAX laden"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:583
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:729
+msgid "Content Tags List"
+msgstr "Inhalts-Tag-Liste"
+
+#: src/Admin/screen-stats.php:105
+msgid "See your most viewed posts of all time"
+msgstr "Sieh deine am häufigsten angezeigten Beiträge aller Zeiten"
+
+#: src/Admin/screen-stats.php:104
+msgid "See your most viewed posts within the last hour"
+msgstr "Sieh deine am häufigsten angezeigten Beiträge der letzten Stunde"
+
+#: src/Admin/screen-stats.php:103
+msgid "See your most commented posts within the selected time range"
+msgstr "Sieh deine meist kommentierten Beiträge innerhalb des ausgewählten Zeitraums"
+
+#: src/Admin/screen-stats.php:102
+msgid "See your most viewed posts within the selected time range"
+msgstr "Sieh deine am häufigsten angezeigten Beiträge innerhalb des ausgewählten Zeitraums"
+
+#: src/Admin/Admin.php:1455
+msgid "Remind me later"
+msgstr "Später daran erinnern"
+
+#: src/Admin/Admin.php:1455
+msgid "Dismiss"
+msgstr "Verwerfen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:579
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:725
+msgid "Post HTML markup"
+msgstr "HTML-Markup einsetzen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:563
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:720
+msgid "After popular posts"
+msgstr "Nach beliebten Beiträgen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:547
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:714
+msgid "Before popular posts"
+msgstr "Vor beliebten Beiträgen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:531
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:708
+msgid "After title"
+msgstr "Nach dem Titel"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:515
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:702
+msgid "Before title"
+msgstr "Vor dem Titel"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:459
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:608
+msgid "dd/mm/yyyy"
+msgstr "TT/MM/JJJJ"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:458
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:607
+msgid "mm/dd/yyyy"
+msgstr "DD.MM.YYYY"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:457
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:606
+msgid "yyyy/mm/dd"
+msgstr "JJJJ/MM/TT"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:456
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:605
+msgid "Month Day, Year"
+msgstr "Monat Tag, Jahr"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:411
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:579
+msgid "Display comments count"
+msgstr "Anzahl der Kommentare anzeigen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:357
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:529
+msgid "Thumbnail height"
+msgstr "Vorschaubild-Höhe"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:346
+#: src/Compatibility/Elementor/widgets/widget-controls.php:362
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:523
+#: src/Block/Widget/edit.js:531
+msgid "Size in px units (pixels)"
+msgstr "Größe in Pixel"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:341
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:521
+msgid "Thumbnail width"
+msgstr "Vorschaubild-Breite"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:185
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:354
+msgid "Term IDs must be comma separated, prefix a minus sign to exclude."
+msgstr "Die Begriffs-IDs müssen durch Kommas getrennt werden. Stelle zum Ausschließen ein Minuszeichen voran."
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:141
+#: src/Compatibility/Elementor/widgets/widget-controls.php:154
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:339
+#: src/Block/Widget/edit.js:345
+msgid "IDs must be comma separated."
+msgstr "IDs müssen durch Kommas getrennt werden."
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:127
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:333
+msgid "Post types must be comma separated."
+msgstr "Die Inhaltstypen müssen durch Kommas getrennt werden."
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:84
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:217
+msgid "Time Unit"
+msgstr "Zeiteinheit"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:74
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:210
+msgid "Time Quantity"
+msgstr "Zeitumfang"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:57
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:199
+msgid "Last 24 Hours"
+msgstr "Letzte 24 Stunden"
+
+#: src/Admin/screen-tools.php:265
+msgid "Enable experimental features"
+msgstr "Experimentelle Funktionen aktivieren"
+
+#: src/Admin/Admin.php:693
+msgid "Support"
+msgstr "Support"
+
+#: src/Admin/screen-tools.php:89
+msgid "No, use image as is"
+msgstr "Nein, Bild so verwenden, wie es ist"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:493
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:733
+msgid "Theme"
+msgstr "Theme"
+
+#: src/Admin/screen-tools.php:74
+msgid "No"
+msgstr "Nein"
+
+#: src/Admin/screen-tools.php:71
+msgid "Lazy load"
+msgstr "Verzögertes Laden"
+
+#: src/Admin/Admin.php:527
+msgid "View more"
+msgstr "Mehr anzeigen"
+
+#: src/Admin/Admin.php:772 src/Admin/Admin.php:1174 src/Admin/Admin.php:1178
+#: src/Output.php:877 src/Shortcode/ViewsCount.php:79
+msgid "%s view"
+msgid_plural "%s views"
+msgstr[0] "%s Aufruf"
+msgstr[1] "%s Aufrufe"
+
+#: src/Admin/Admin.php:772 src/Admin/Admin.php:1176 src/Admin/Admin.php:1178
+#: src/Output.php:860
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s Kommentar"
+msgstr[1] "%s Kommentare"
+
+#: src/Rest/PostsEndpoint.php:210
+msgid "Include popular posts from author ID(s)."
+msgstr "Beliebte Beiträge von Autoren-ID(s) einbeziehen."
+
+#: src/Rest/PostsEndpoint.php:178 src/Rest/PostsEndpoint.php:186
+msgid "Post IDs to exclude from the listing."
+msgstr "Beitrags-IDs, die von der Auflistung ausgeschlossen werden sollen."
+
+#: src/Admin/screen-tools.php:177
+msgid "WPP can cache the popular list for a specified amount of time. Recommended for large / high traffic sites"
+msgstr "WPP kann die Beliebtheitsliste für eine bestimmte Zeit zwischenspeichern. Empfohlen für große und stark frequentierte Websites"
+
+#: src/Admin/screen-tools.php:169
+msgid "Data Caching"
+msgstr "Zwischenspeichern der Daten"
+
+#: src/Rest/ViewLoggerEndpoint.php:318
+msgid "Sets the Sampling Rate."
+msgstr "Legt die Stichprobenrate fest."
+
+#: src/Rest/ViewLoggerEndpoint.php:311
+msgid "Enables Data Sampling."
+msgstr "Aktiviert die stichprobenartige Erfassung der Daten."
+
+#: src/Rest/ViewLoggerEndpoint.php:298
+msgid "The post / page ID."
+msgstr "Die ID des Beitrags oder der Seite."
+
+#: src/Rest/PostsEndpoint.php:202
+msgid "Taxonomy IDs, separated by comma (prefix a minus sign to exclude)."
+msgstr "Taxonomie-IDs, getrennt durch Komma (zum Ausschluss ein Minuszeichen voranstellen)."
+
+#: src/Rest/PostsEndpoint.php:194
+msgid "Include posts in a specified taxonomy."
+msgstr "Beiträge in einer bestimmten Taxonomie einschließen."
+
+#: src/Rest/PostsEndpoint.php:170
+msgid "Specifies the number of time units of the custom time range."
+msgstr "Legt die Anzahl der Zeiteinheiten des individuellen Zeitraums fest."
+
+#: src/Rest/PostsEndpoint.php:162
+msgid "Specifies the time unit of the custom time range."
+msgstr "Legt die Zeiteinheit des individuellen Zeitraums fest."
+
+#: src/Rest/PostsEndpoint.php:154
+msgid "Return popular posts from a specified time range."
+msgstr "Gibt beliebte Beiträge aus einem bestimmten Zeitraum zurück."
+
+#: src/Rest/PostsEndpoint.php:146
+msgid "Set the sorting option of the popular posts."
+msgstr "Legt das Sortierkriterium für die beliebten Beiträge fest."
+
+#: src/Rest/PostsEndpoint.php:138
+msgid "An offset point for the collection."
+msgstr "Der Ausgangspunkt für die Sammlung."
+
+#: src/Rest/PostsEndpoint.php:130
+msgid "Retrieve the most popular entries published within the specified time range."
+msgstr "Ruft die beliebtesten Einträge ab, die innerhalb des angegebenen Zeitraums veröffentlicht wurden."
+
+#: src/Rest/PostsEndpoint.php:122
+msgid "The maximum number of popular posts to return."
+msgstr "Die maximale Anzahl populärer Beiträge, die zurückgegeben werden sollen."
+
+#: src/Rest/PostsEndpoint.php:115
+msgid "Return popular posts from specified custom post type(s)."
+msgstr "Liefert beliebte Beiträge aus dem/den angegebenen individuellen Inhaltstyp(en)."
+
+#: src/Admin/screen-tools.php:42
+msgid "This image will be displayed when no thumbnail is available"
+msgstr "Dieses Bild wird angezeigt, wenn kein Vorschaubild verfügbar ist"
+
+#: src/Admin/screen-tools.php:38
+msgid "Change thumbnail"
+msgstr "Vorschaubild ändern"
+
+#: src/Admin/screen-stats.php:105
+msgid "Hall of Fame"
+msgstr "Ruhmeshalle"
+
+#: src/Admin/Admin.php:438 src/Admin/screen-stats.php:104
+msgid "Trending now"
+msgstr "Aktuell im Trend"
+
+#: src/Admin/screen-stats.php:103
+msgid "Most commented"
+msgstr "Am häufigsten kommentiert"
+
+#: src/Admin/screen-stats.php:102
+msgid "Most viewed"
+msgstr "Am häufigsten angezeigt"
+
+#: src/Admin/screen-stats.php:79
+msgid "Today"
+msgstr "Heute"
+
+#: src/Admin/Admin.php:556
+msgid "Use this image"
+msgstr "Dieses Bild verwenden"
+
+#: src/Admin/Admin.php:404
+msgid "%s view in the last hour"
+msgid_plural "%s views in the last hour"
+msgstr[0] "%s Aufruf in der letzten Stunde"
+msgstr[1] "%s Aufrufe in der letzten Stunde"
+
+#: src/Admin/screen-tools.php:151
+msgid "Data older than the specified time frame will be automatically discarded"
+msgstr "Daten, die älter als der angegebene Zeitraum sind, werden automatisch verworfen"
+
+#. Description of the plugin
+#: wordpress-popular-posts.php
+msgid "A highly customizable plugin that displays the most popular posts on your blog."
+msgstr "Ein hochgradig anpassbares Plugin, das die beliebtesten Beiträge deines Blogs anzeigt."
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:455
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:604
+msgid "Relative"
+msgstr "Relativ"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:152
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:344
+msgid "Author ID(s)"
+msgstr "Autoren-ID(s)"
+
+#: src/Admin/screen-stats.php:91
+#: src/Compatibility/Elementor/widgets/widget-controls.php:61
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:203
+msgid "Custom"
+msgstr "Individuell"
+
+#: src/Output.php:894
+msgid "posted %s"
+msgstr "veröffentlicht am %s"
+
+#: src/Output.php:688
+msgid "%s ago"
+msgstr "vor %s"
+
+#: src/Admin/screen-stats.php:96
+msgid "Err... A nice little chart is supposed to be here, instead you are seeing this because your browser is too old. <br /> Please <a href=\"%s\" target=\"_blank\">get a better browser</a>."
+msgstr "Ähm... Eigentlich sollte hier ein nettes kleines Diagramm stehen, stattdessen siehst du dies, weil dein Browser zu alt ist. <br /> Bitte <a href=\"%s\" target=\"_blank\">besorge dir einen besseren Browser</a>."
+
+#: src/Admin/screen-stats.php:58
+msgid "Select a date..."
+msgstr "Wähle ein Datum aus …"
+
+#: src/Admin/screen-stats.php:44
+msgid "Date Range"
+msgstr "Datumsbereich"
+
+#: src/Admin/screen-stats.php:43
+msgid "Custom Time Range"
+msgstr "Individueller Zeitraum"
+
+#: src/Admin/screen-stats.php:33 src/Admin/screen-stats.php:68
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: src/Admin/Admin.php:692
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: src/Admin/Admin.php:1191
+msgid "Looks like your site's activity is a little low right now. <br />Spread the word and come back later!"
+msgstr "Sieht so aus, als wäre die Aktivität auf deiner Website im Moment etwas gering. <br />Mache sie bekannter und komm später zurück!"
+
+#: src/Admin/Admin.php:1180 assets/js/blocks/block-wpp-widget.js:1
+#: src/Block/Widget/edit.js:125
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: src/Admin/Admin.php:1180
+msgid "View"
+msgstr "Anzeigen"
+
+#: src/Admin/Admin.php:797
+msgid "Views"
+msgstr "Aufrufe"
+
+#: src/Admin/Admin.php:666
+msgid "<p><strong>For more information:</strong></p><ul><li><a href=\"%1$s\">Documentation</a></li><li><a href=\"%2$s\">Support</a></li></ul>"
+msgstr "<p><strong>Für weitere Informationen:</strong></p><ul><li><a href=\"%1$s\">Dokumentation</a></li><li><a href=\"%2$s\">Support</a></li></ul>"
+
+#: src/Admin/Admin.php:650
+msgid "Like this plugin?"
+msgstr "Gefällt dir dieses Plugin?"
+
+#: src/Admin/Admin.php:644
+msgid "Welcome to WordPress Popular Posts' Dashboard! In this screen you will find statistics on what's popular on your site, tools to further tweak WPP to your needs, and more!"
+msgstr "Willkommen beim Dashboard von WordPress Popular Posts! Auf diesem Bildschirm findest du Statistiken darüber, was auf deiner Website beliebt ist, Werkzeuge zur weiteren Anpassung von WPP an deine Bedürfnisse und vieles mehr!"
+
+#: src/Admin/Admin.php:643
+msgid "Overview"
+msgstr "Überblick"
+
+#: src/Admin/screen-tools.php:51
+msgid "First attachment"
+msgstr "Erster Anhang"
+
+#. Author URI of the plugin
+#: wordpress-popular-posts.php
+msgid "https://cabrerahector.com/"
+msgstr "https://cabrerahector.com/"
+
+#. Author of the plugin
+#: wordpress-popular-posts.php
+msgid "Hector Cabrera"
+msgstr "Hector Cabrera"
+
+#. Plugin URI of the plugin
+#: wordpress-popular-posts.php
+msgid "https://wordpress.org/plugins/wordpress-popular-posts/"
+msgstr "https://de.wordpress.org/plugins/wordpress-popular-posts/"
+
+#. Plugin Name of the plugin
+#: wordpress-popular-posts.php
+msgid "WordPress Popular Posts"
+msgstr "WordPress Popular Posts"
+
+#: src/Output.php:899
+msgid "under %s"
+msgstr "unter %s"
+
+#: src/Output.php:894
+msgid "posted on %s"
+msgstr "veröffentlicht am %s"
+
+#: src/Output.php:889
+msgid "by %s"
+msgstr "von %s"
+
+#: src/Output.php:871
+msgid "%s view per day"
+msgid_plural "%s views per day"
+msgstr[0] "%s Aufruf pro Tag"
+msgstr[1] "%s Aufrufe pro Tag"
+
+#: src/Output.php:308
+msgid "Sorry. No data so far."
+msgstr "Noch keine Daten vorhanden."
+
+#: src/Admin/Admin.php:561
+msgid "The thumbnail cache is already empty!"
+msgstr "Der Vorschaubild-Zwischenspeicher ist bereits leer!"
+
+#: src/Admin/Admin.php:560
+msgid "Success! All files have been deleted!"
+msgstr "Erfolgreich! Alle Dateien wurden gelöscht!"
+
+#: src/Admin/Admin.php:563 src/Admin/screen-debug.php:5
+#: src/Admin/screen-tools.php:5
+msgid "Sorry, you do not have enough permissions to do this. Please contact the site administrator for support."
+msgstr "Du hast leider nicht genügend Rechte, um dies zu tun. Bitte wende dich an den Administrator der Website, um Unterstützung zu erhalten."
+
+#: src/Admin/Admin.php:564
+msgid "Invalid action."
+msgstr "Diese Aktion ist ungültig."
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:474
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:692
+msgid "HTML Markup settings"
+msgstr "HTML-Markup-Einstellungen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:460
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:609
+msgid "WordPress Date Format"
+msgstr "WordPress-Datumsformat"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:451
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:601
+msgid "Date Format"
+msgstr "Datumsformat"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:441
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:594
+msgid "Display date"
+msgstr "Datum anzeigen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:431
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:589
+msgid "Display author"
+msgstr "Autor anzeigen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:421
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:584
+msgid "Display views"
+msgstr "Aufrufe anzeigen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:400
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:577
+msgid "Stats Tag settings"
+msgstr "Einstellungen des Statistik-Tags"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:329
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:513
+msgid "Set size manually"
+msgstr "Größe manuell festlegen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:330
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:514
+msgid "Use predefined size"
+msgstr "Vorgegebene Größe verwenden"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:315
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:504
+msgid "Display post thumbnail"
+msgstr "Beitrags-Vorschaubild anzeigen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:286
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:487
+msgid "Excerpt length"
+msgstr "Textauszugslänge"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:273
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:482
+msgid "Keep text format and links"
+msgstr "Textformat und Links beibehalten"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:263
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:475
+msgid "Display post excerpt"
+msgstr "Beitragstextauszug anzeigen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:252
+#: src/Compatibility/Elementor/widgets/widget-controls.php:304
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:468
+#: src/Block/Widget/edit.js:497
+msgid "words"
+msgstr "Wörter"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:251
+#: src/Compatibility/Elementor/widgets/widget-controls.php:303
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:467
+#: src/Block/Widget/edit.js:496
+msgid "characters"
+msgstr "Zeichen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:233
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:458
+msgid "Shorten title to"
+msgstr "Titel kürzen auf"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:223
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:451
+msgid "Shorten title"
+msgstr "Titel kürzen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:212
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:551
+msgid "Display post rating"
+msgstr "Beitragsbewertung anzeigen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:200
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:449
+msgid "Posts settings"
+msgstr "Beitragseinstellungen"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:139
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:338
+msgid "Post ID(s) to exclude"
+msgstr "Auszuschließende Beitrags-ID(s)"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:53
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:196
+msgid "Time Range"
+msgstr "Zeitraum"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:116
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:330
+msgid "Filters"
+msgstr "Filter"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:44
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:190
+msgid "Avg. daily views"
+msgstr "Durchschnittliche tägliche Aufrufe"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:43
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:189
+msgid "Total views"
+msgstr "Anzahl der Aufrufe"
+
+#: src/Admin/Admin.php:793
+#: src/Compatibility/Elementor/widgets/widget-controls.php:45
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:191
+msgid "Comments"
+msgstr "Kommentare"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:39
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:186
+msgid "Sort posts by"
+msgstr "Beiträge sortieren nach"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:15
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:174
+msgid "Title"
+msgstr "Titel"
+
+#: src/Admin/Admin.php:659
+msgid "You can <a href=\"%s\" target=\"_blank\">leave a review</a>, too!"
+msgstr "Du kannst <a href=\"%s\" target=\"_blank\">auch eine Rezension verfassen</a>!"
+
+#: src/Admin/Admin.php:652
+msgid "Each donation motivates me to keep releasing free stuff for the WordPress community!"
+msgstr "Jede Spende motiviert mich, weiterhin kostenlose Dinge für die WordPress-Community zu veröffentlichen!"
+
+#: src/Admin/screen-tools.php:261
+msgid "By default, the plugin includes a stylesheet called wpp.css which you can use to style your popular posts listing. If you wish to use your own stylesheet or do not want it to have it included in the header section of your site, use this."
+msgstr "Standardmäßig enthält das Plugin ein Stylesheet namens wpp.css, das du für die Gestaltung der Liste der beliebten Beiträge verwenden kannst. Wenn du dein eigenes Stylesheet verwenden möchtest oder nicht willst, dass es in den Header-Bereich deiner Website aufgenommen wird, verwende dies."
+
+#: src/Admin/screen-tools.php:254
+msgid "Use plugin's stylesheet"
+msgstr "Stylesheet des Plugins verwenden"
+
+#: src/Admin/screen-tools.php:248
+msgid "New tab/window"
+msgstr "Neuem Tab/Fenster"
+
+#: src/Admin/screen-tools.php:247
+msgid "Current window"
+msgstr "Aktuelles Fenster"
+
+#: src/Admin/screen-tools.php:244
+msgid "Open links in"
+msgstr "Links öffnen in"
+
+#: src/Admin/screen-tools.php:238
+msgid "Miscellaneous"
+msgstr "Sonstiges"
+
+#: src/Admin/screen-tools.php:220
+msgid "A sampling rate of %d is recommended for large / high traffic sites. For lower traffic sites, you should lower the value."
+msgstr "Eine Stichprobenrate von %d wird für große und stark frequentierte Websites empfohlen. Bei weniger frequentierten Websites solltest du den Wert verringern."
+
+#: src/Admin/screen-tools.php:216
+msgid "Sample Rate"
+msgstr "Abtastrate"
+
+#: src/Admin/screen-tools.php:197
+msgid "Data Sampling"
+msgstr "Stichprobenartige Erfassung"
+
+#: src/Admin/screen-tools.php:193
+msgid "Really? That long?"
+msgstr "Wirklich? So lang?"
+
+#: src/Admin/screen-tools.php:190
+msgid "Year(s)"
+msgstr "Jahr(e)"
+
+#: src/Admin/screen-tools.php:189
+msgid "Month(s)"
+msgstr "Monat(e)"
+
+#: src/Admin/screen-tools.php:188
+msgid "Week(s)"
+msgstr "Woche(n)"
+
+#: src/Admin/screen-stats.php:53 src/Admin/screen-tools.php:187
+#: src/Compatibility/Elementor/widgets/widget-controls.php:90
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:222
+msgid "Day(s)"
+msgstr "Tag(e)"
+
+#: src/Admin/screen-stats.php:52 src/Admin/screen-tools.php:186
+#: src/Compatibility/Elementor/widgets/widget-controls.php:89
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:221
+msgid "Hour(s)"
+msgstr "Stunde(n)"
+
+#: src/Admin/screen-stats.php:51 src/Admin/screen-tools.php:185
+#: src/Compatibility/Elementor/widgets/widget-controls.php:88
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:220
+msgid "Minute(s)"
+msgstr "Minute(n)"
+
+#: src/Admin/screen-tools.php:181
+msgid "Refresh cache every"
+msgstr "Auffrischen des Zwischenspeichers alle"
+
+#: src/Admin/screen-tools.php:173
+msgid "Enable caching"
+msgstr "Zwischenspeichern aktivieren"
+
+#: src/Admin/screen-tools.php:172
+msgid "Never cache"
+msgstr "Niemals zwischenspeichern"
+
+#: src/Admin/screen-tools.php:71 src/Admin/screen-tools.php:169
+#: src/Admin/screen-tools.php:197 src/Admin/screen-tools.php:216
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:692
+msgid "What is this?"
+msgstr "Was ist das?"
+
+#: src/Admin/screen-tools.php:165
+msgid "If you are using a caching plugin such as WP Super Cache, enabling this feature will keep the popular list from being cached by it"
+msgstr "Wenn du ein Zwischenspeicher-Plugin wie WP Super Cache verwendest, verhindert die Aktivierung dieser Funktion das Zwischenspeichern der Beliebtheitsliste durch dieses Plugin."
+
+#: src/Admin/screen-tools.php:148
+msgid "day(s)"
+msgstr "Tag(e)"
+
+#: src/Admin/screen-tools.php:144
+msgid "Keep data for"
+msgstr "Daten aufbewahren für"
+
+#: src/Admin/screen-tools.php:140
+msgid "Log limit"
+msgstr "Protokollgrenze"
+
+#: src/Admin/screen-tools.php:134
+msgid "Everyone"
+msgstr "Jedem"
+
+#: src/Admin/screen-tools.php:133
+msgid "Logged-in users only"
+msgstr "Nur angemeldete Benutzer"
+
+#: src/Admin/screen-tools.php:132
+msgid "Visitors only"
+msgstr "Nur Besucher"
+
+#: src/Admin/screen-tools.php:129
+msgid "Log views from"
+msgstr "Protokollierung der Aufrufe von"
+
+#: src/Admin/screen-tools.php:123
+msgid "Data"
+msgstr "Daten"
+
+#: src/Admin/screen-tools.php:102
+msgid "Use this button to clear WPP's thumbnails cache"
+msgstr "Verwende diesen Button, um den Vorschaubild-Zwischenspeicher von WPP zu leeren"
+
+#: src/Admin/screen-tools.php:101
+msgid "Empty image cache"
+msgstr "Bilder-Zwischenspeicher leeren"
+
+#: src/Admin/screen-tools.php:143 src/Admin/screen-tools.php:160
+#: src/Admin/screen-tools.php:200 src/Admin/screen-tools.php:258
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: src/Admin/screen-tools.php:161 src/Admin/screen-tools.php:201
+#: src/Admin/screen-tools.php:257
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#: src/Admin/screen-tools.php:75 src/Admin/screen-tools.php:90
+msgid "Yes"
+msgstr "Ja"
+
+#: src/Admin/screen-tools.php:86
+msgid "Resize image from Custom field?"
+msgstr "Bild aus individuellem Feld skalieren?"
+
+#: src/Admin/screen-tools.php:80
+msgid "Custom field name"
+msgstr "Name des individuellen Feldes"
+
+#: src/Admin/screen-tools.php:55
+msgid "Tell WordPress Popular Posts where it should get thumbnails from"
+msgstr "Teile WordPress Popular Posts mit, woher es Vorschaubilder beziehen soll"
+
+#: src/Admin/screen-tools.php:52
+msgid "Custom field"
+msgstr "Individuelles Feld"
+
+#: src/Admin/screen-tools.php:50
+msgid "First image on post"
+msgstr "Erstes Bild im Beitrag"
+
+#: src/Admin/screen-tools.php:49
+msgid "Featured image"
+msgstr "Beitragsbild"
+
+#: src/Admin/screen-tools.php:46
+msgid "Pick image from"
+msgstr "Bildquelle auswählen"
+
+#: src/Admin/screen-tools.php:19
+msgid "Default thumbnail"
+msgstr "Standardvorschaubild"
+
+#: src/Admin/screen-tools.php:13
+msgid "Thumbnails"
+msgstr "Vorschaubilder"
+
+#: src/Compatibility/Elementor/widgets/widget-controls.php:60
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:202
+msgid "All-time"
+msgstr "Allzeithoch"
+
+#: src/Admin/screen-stats.php:88
+#: src/Compatibility/Elementor/widgets/widget-controls.php:59
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:201
+msgid "Last 30 days"
+msgstr "Letzte 30 Tage"
+
+#: src/Admin/screen-stats.php:85
+#: src/Compatibility/Elementor/widgets/widget-controls.php:58
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:200
+msgid "Last 7 days"
+msgstr "Letzte 7 Tage"
+
+#: src/Admin/screen-stats.php:82
+msgid "Last 24 hours"
+msgstr "Letzte 24 Stunden"
+
+#: src/Admin/screen-stats.php:25
+#: src/Compatibility/Elementor/widgets/widget-controls.php:101
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:229
+msgid "Display only posts published within the selected Time Range"
+msgstr "Nur Beiträge anzeigen, die innerhalb des ausgewählten Zeitraums veröffentlicht wurden"
+
+#: src/Admin/screen-stats.php:32 src/Admin/screen-stats.php:65
+#: src/Admin/screen-tools.php:111 src/Admin/screen-tools.php:226
+#: src/Admin/screen-tools.php:273
+msgid "Apply"
+msgstr "Anwenden"
+
+#: src/Admin/screen-stats.php:21
+#: src/Compatibility/Elementor/widgets/widget-controls.php:32
+#: assets/js/blocks/block-wpp-widget.js:1 src/Block/Widget/edit.js:179
+msgid "Limit"
+msgstr "Grenze"
+
+#: src/Admin/screen-stats.php:18
+msgid "Post type"
+msgstr "Inhaltstyp"
+
+#: src/Admin/admin-page.php:9
+msgid "Parameters"
+msgstr "Parameter"
+
+#: src/Admin/admin-page.php:8 src/Admin/admin-page.php:120
+msgid "Tools"
+msgstr "Werkzeuge"
+
+#: src/Admin/admin-page.php:7 src/Admin/admin-page.php:119
+msgid "Stats"
+msgstr "Statistiken"
+
+#: src/Admin/Admin.php:559
+msgid "This operation will delete all cached thumbnails and cannot be undone."
+msgstr "Dieser Vorgang löscht alle zwischengespeicherten Vorschaubilder und kann nicht rückgängig gemacht werden."
+
+#: src/Admin/Admin.php:562
+msgid "Do you want to continue?"
+msgstr "Möchtest du fortfahren?"
+
+#: src/Admin/admin-page.php:55
+msgid "Please provide the name of your custom field."
+msgstr "Bitte gib den Namen deines individuellen Feldes an."
+
+#: src/Admin/admin-page.php:32 src/Admin/admin-page.php:44
+#: src/Admin/admin-page.php:77 src/Admin/admin-page.php:109
+msgid "Settings saved."
+msgstr "Die Einstellungen wurden gespeichert."

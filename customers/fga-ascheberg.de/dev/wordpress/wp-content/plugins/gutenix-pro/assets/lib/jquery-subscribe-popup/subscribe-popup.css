@@ -1,0 +1,125 @@
+#gutenix_pro-subscribe_popup {
+	overflow: hidden;
+	position: fixed;
+	z-index: 999;
+	left: 50%;
+	top: 50%;
+	width: 740px;
+	height: 500px;
+	margin-top: -250px;
+	margin-left: -370px;
+	max-width: 95%;
+	padding: 0;
+	opacity: 0;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	background-color: #fff;
+	transform: scale(0);
+	transition: opacity 0.4s, transform 0s 0.4s;
+}
+
+body.is-overlay.gutenix_pro-subscribe_popup_active #gutenix_pro-subscribe_popup {
+	overflow: visible;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.gutenix_pro-subscribe_popup-overlay {
+	position: fixed;
+	z-index: 995;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	overflow: hidden;
+	background-color: transparent;
+	transform: scale(0);
+	transition: background-color 0.4s, transform 0s 0.4s;
+}
+
+body.is-overlay.gutenix_pro-subscribe_popup_active .gutenix_pro-subscribe_popup-overlay {
+	background-color: rgba(0, 0, 0, 0.25);
+	transform: scale(1);
+	transition: background-color 0.4s, transform 0s;
+}
+
+.gutenix_pro-subscribe_popup_left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.gutenix_pro-subscribe_popup_right {
+	margin: 0;
+	padding: 10% 50px;
+	text-align: center;
+}
+
+.gutenix_pro-subscribe_popup_left + .gutenix_pro-subscribe_popup_right {
+	margin: 0 0 0 50%;
+	padding: 10% 30px 0;
+	text-align: left;
+}
+
+#gutenix_pro-subscribe_popup .checkbox-label {
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	left: 0;
+	right: 0;
+}
+
+#gutenix_pro-subscribe_popup .mc4wp-form p{
+	margin-bottom: 15px;
+}
+#gutenix_pro-subscribe_popup .mc4wp-form input[type="email"] {
+	display: block;
+	width: 100%;
+	padding-left: 0; 
+	padding-right: 0;
+	font-size: 14px;
+	border: 0;
+	border-bottom: 1px solid #e8e9eb;
+	border-radius: 0;
+	box-shadow: none !important;
+}
+#gutenix_pro-subscribe_popup .mc4wp-form input[type="submit"] {
+	display: block;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+#gutenix_pro-subscribe_popup .checkbox-label label {
+	display: inline-block;
+	position: relative;
+	color: #666;
+	margin-left: 8px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.gutenix_pro-subscribe_popup-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	background: none !important;
+}
+
+.gutenix_pro-subscribe_popup-close path {
+	fill: #999
+}
+.gutenix_pro-subscribe_popup-close:hover path {
+	fill: #222
+}

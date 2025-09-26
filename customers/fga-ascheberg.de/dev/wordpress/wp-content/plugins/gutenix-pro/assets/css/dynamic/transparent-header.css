@@ -1,0 +1,141 @@
+/* #Transparent Header */
+@media (min-width: 1025px) {
+	.header-bar.header-bar--transparent:not(.is-sticky) {
+		background: @alpha( $transparent_header_bg, $transparent_header_bg_alpha );
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-logo__link,
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-logo__link:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-description {
+		color: $transparent_header_site_title_color;
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle-close,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-cart__link,
+	.header-bar.header-bar--transparent:not(.is-sticky) .social-list--header a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .gutenix-header-login-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item > a {
+		color: $transparent_header_header_link_color;
+	}
+	
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle path,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close path {
+		fill: $transparent_header_header_link_color;
+	}
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle:hover path,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close:hover path {
+		fill: $transparent_header_header_link_hover_color;
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle-close:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-cart__link:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .social-list--header a:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .gutenix-header-login-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item:hover > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item.focus > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current_page_item > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current-menu-item > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current_page_ancestor > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current-menu-ancestor > a {
+		color: $transparent_header_header_link_hover_color;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.header-bar.header-bar--transparent-tablet:not(.is-sticky) {
+		background: @alpha( $transparent_header_bg, $transparent_header_bg_alpha );
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-logo__link,
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-logo__link:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-description {
+		color: $transparent_header_site_title_color;
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle-close,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-cart__link,
+	.header-bar.header-bar--transparent:not(.is-sticky) .social-list--header a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .gutenix-header-login-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item > a {
+		color: $transparent_header_header_link_color;
+	}
+	
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle path,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close path {
+		fill: $transparent_header_header_link_color;
+	}
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle:hover path,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close:hover path {
+		fill: $transparent_header_header_link_hover_color;
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle-close:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-cart__link:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .social-list--header a:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .gutenix-header-login-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item:hover > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item.focus > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current_page_item > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current-menu-item > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current_page_ancestor > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current-menu-ancestor > a {
+		color: $transparent_header_header_link_hover_color;
+	}
+}
+
+@media (max-width: 767px) {
+	.header-bar.header-bar--transparent-mobile:not(.is-sticky) {
+		background: @alpha( $transparent_header_bg, $transparent_header_bg_alpha );
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-logo__link,
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-logo__link:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .site-description {
+		color: $transparent_header_site_title_color;
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle-close,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-cart__link,
+	.header-bar.header-bar--transparent:not(.is-sticky) .social-list--header a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .gutenix-header-login-toggle,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item > a {
+		color: $transparent_header_header_link_color;
+	}
+	
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle path,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close path {
+		fill: $transparent_header_header_link_color;
+	}
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle:hover path,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close:hover path {
+		fill: $transparent_header_header_link_hover_color;
+	}
+
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .menu-toggle-close:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-search-close:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .header-cart__link:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .social-list--header a:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .gutenix-header-login-toggle:hover,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item:hover > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .menu-item.focus > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current_page_item > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current-menu-item > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current_page_ancestor > a,
+	.header-bar.header-bar--transparent:not(.is-sticky) .main-navigation--default .menu > .current-menu-ancestor > a {
+		color: $transparent_header_header_link_hover_color;
+	}
+}

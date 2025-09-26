@@ -1,0 +1,140 @@
+2025-05-16T09:50:35+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/wp-mail-smtp/src/Admin/SetupWizard.php(1226): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): WPMailSMTP\Admin\SetupWizard->check_mailer_configuration()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin-ajax.php(192): do_action()
+#8 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-05-16T09:50:35+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/wp-mail-smtp/src/Admin/SetupWizard.php(1226): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): WPMailSMTP\Admin\SetupWizard->check_mailer_configuration()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin-ajax.php(192): do_action()
+#8 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-05-16T10:10:07+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/check-email/include/Core/UI/Page/Check_Email_Status_Page.php(140): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/check-email/include/Core/UI/Page/Check_Email_Status_Page.php(73): CheckEmail\Core\UI\Page\Check_Email_Status_Page->checkemail_send()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): CheckEmail\Core\UI\Page\Check_Email_Status_Page->render_page()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-05-16T10:10:07+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/check-email/include/Core/UI/Page/Check_Email_Status_Page.php(140): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/check-email/include/Core/UI/Page/Check_Email_Status_Page.php(73): CheckEmail\Core\UI\Page\Check_Email_Status_Page->checkemail_send()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): CheckEmail\Core\UI\Page\Check_Email_Status_Page->render_page()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-05-21T11:47:03+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/getwid/includes/mailer.php(23): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/getwid/includes/blocks/contact-form.php(264): Getwid\Mailer->send()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/getwid/includes/blocks/contact-form.php(223): Getwid\Blocks\ContactForm->send_mail()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): Getwid\Blocks\ContactForm->send()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin-ajax.php(192): do_action()
+#10 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-05-21T11:47:03+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/getwid/includes/mailer.php(23): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/getwid/includes/blocks/contact-form.php(264): Getwid\Mailer->send()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/getwid/includes/blocks/contact-form.php(223): Getwid\Blocks\ContactForm->send_mail()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): Getwid\Blocks\ContactForm->send()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin-ajax.php(192): do_action()
+#10 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-05-21T12:33:16+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/wp-mail-smtp/src/Admin/Pages/TestTab.php(350): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/wp-mail-smtp/src/Admin/ParentPageAbstract.php(265): WPMailSMTP\Admin\Pages\TestTab->process_post()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): WPMailSMTP\Admin\ParentPageAbstract->process_actions()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin.php(176): do_action()
+#9 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-05-21T12:33:16+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/wp-mail-smtp/src/Admin/Pages/TestTab.php(350): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/wp-mail-smtp/src/Admin/ParentPageAbstract.php(265): WPMailSMTP\Admin\Pages\TestTab->process_post()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): WPMailSMTP\Admin\ParentPageAbstract->process_actions()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin.php(176): do_action()
+#9 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-06-10T11:47:57+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/check-email/include/Core/UI/Page/Check_Email_Status_Page.php(140): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/check-email/include/Core/UI/Page/Check_Email_Status_Page.php(73): CheckEmail\Core\UI\Page\Check_Email_Status_Page->checkemail_send()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): CheckEmail\Core\UI\Page\Check_Email_Status_Page->render_page()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+
+2025-06-10T11:47:57+02:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array callback must have exactly two members in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#1 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/pluggable.php(582): do_action()
+#3 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/check-email/include/Core/UI/Page/Check_Email_Status_Page.php(140): wp_mail()
+#4 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-content/plugins/check-email/include/Core/UI/Page/Check_Email_Status_Page.php(73): CheckEmail\Core\UI\Page\Check_Email_Status_Page->checkemail_send()
+#5 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(324): CheckEmail\Core\UI\Page\Check_Email_Status_Page->render_page()
+#6 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /kunden/199475_59387/web-development/customers/fga-ascheberg.de/dev/wordpress/wp-includes/class-wp-hook.php on line 324
+

@@ -1,0 +1,8 @@
+/* Single Post Content */
+@media (min-width: 1025px) {
+	body.no-sidebar.single .hentry {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		width: $single_post_content_width{%};
+	}
+}
